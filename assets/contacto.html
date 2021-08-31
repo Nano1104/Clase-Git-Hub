@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artemis - Contactanos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Architects+Daughter&family=Iceland&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header id="contact-header">
+        <div class="container-nav-contact">
+            <nav class="container-nav-contact__nav">
+                <ul class="container-nav-contact__nav__ul">
+                    <li class="container-nav-contact__nav__ul__li">
+                        <a href="index.html#inicio" class="container-nav-contact__nav__ul__li__a">Inicio</a>
+                    </li> 
+                    <li class="container-nav-contact__nav__ul__li">
+                        <a href="nosotros.html" class="container-nav-contact__nav__ul__li__a">Nosotros</a>
+                    </li>
+                    <li class="container-nav-contact__nav__ul__li">
+                        <a href="productos.html" class="container-nav-contact__nav__ul__li__a">Productos</a>
+                    </li>
+                    <li class="container-nav-contact__nav__ul__li">
+                        <a href="novedades.html" class="container-nav-contact__nav__ul__li__a">Novedades</a>
+                    </li>
+                    <li class="container-nav-contact__nav__ul__li">
+                        <a href="contacto.html" class="container-nav-contact__nav__ul__li__a">Contactanos</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="container-nav-contact__circle">
+                     <!-- Inconxo que se desplaza al tocarlo para dejar a la vista los enlaces -->
+            </div>
+            </div>
+            <div class="container-nav-contact__logo">
+        </div>
+    </header>
+
+    <main>
+        <div id="main-contact">
+            <section class="main-contact__section">
+                <h1 class="main-contact__section__title" id="form-title">
+                    Contactanos
+                </h1>
+                
+                 <form action="" method="POST" enctype="application/x-www-form-urlencoded" class="main-contact__section__form">
+                    <div class="main-contact__section__form__names">
+                        <input type="text" name="nombre y apellido" placeholder="Nombre y Apellido" required>
+                        <input type="mail" name="mail" placeholder="Tu e-mail" required>
+                        <input type="number" name="celular" placeholder="celular" required>
+                    </div>
+
+                    <div class="main-contact__section__consultation">
+                        <div class="main-contact__section__consultation__left">
+                            <label for="consulta" class="main-contact__section__consultation__left__label"></label>Cual es tu Consulta</label>
+                            <select name="consulta" class="main-contact__section__consultation__left__select" required>
+                                <option value="Promociones">Sobre promociones</option>
+                                <option value="Las formas de envío">Las formas de envío</option>
+                                <option value="Los métodos de pago">Los métodos de pago</option>
+                                <option value="otra consulta">otros</option>
+                            </select>
+                        </div>
+                        <br><br>
+                        <textarea name="textarea" class="main-contact__section__consultation__right" cols="30" rows="10" 
+                        placeholder="Explaya tu consulta aquí">
+                        </textarea>
+                    </div>
+
+                    <br>
+
+                     <label for="setLogin" class="main-contact__section__label">Manteneme Logueado</label>
+                     <input type="checkbox" name="setLogin" class="main-contact__section__input" value="Manteneme Logueado">
+                     <input type="submit" value="Enviar" class="main-contact__section__input">
+                     <input type="reset" value="Borrar" class="main-contact__section__input">
+                 </form> 
+             </section>
+        </div>
+    </main>
+    
+    <footer>
+    </footer>
+</body>
+</html>

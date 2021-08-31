@@ -1,0 +1,380 @@
+
+/* STYLE - INDEX PAGE - */
+
+/* STYLE - INDEX NAV - */
+
+#index-header {
+    background-image: url("../imagenes/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .submenu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 150px;
+        &__logo {
+            background-image: url("../imagenes/logo.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 5%;
+            height: 50%;
+            margin: 20px;
+            border-radius: 50px;
+        }
+        &__firma {
+            font-size: 2rem;
+            display: inline-block;
+            margin-right: 30px;
+            color: white;
+            width: 10%;
+            animation: firma .8s linear infinite;
+        }
+        &__firma p {
+            font-size: 1.5em;
+        }
+    }
+    .title-style {
+        font-size: 8rem;
+        font-family: monospace;
+        color: gold;
+        text-shadow: 5px 5px 10px black;
+        text-align: center;
+    }
+    .index-circle {
+        height: 60px;
+        width: 60px;
+        background: gray;
+        display: inline-block;
+        animation: index-circle 5s linear infinite alternate;
+        border-radius: 50px;
+        margin: 10px;
+        display: none;
+    }
+    .index-nav {
+        margin-top: 20px;
+        &__ul {
+            display: flex;
+            transition: 1s all;
+            &__li { 
+                margin: 15px 25px;
+            }
+            &__li a {
+                color: #D37715;
+                font-size: 1.5em;
+                transition: .3s all;
+            }
+        }
+    }
+}
+
+
+
+/* STYLE - MAIN INDEX - */
+
+#index-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+    .index-paragraph {
+        font-size: 2.7rem;
+        font-family: 'Andika New Basic', sans-serif;
+        color: #FFD700;
+        margin-bottom: 40px;
+        margin-right: 20px;
+        margin-left: 15px;
+        text-align: center;
+    }
+    .index-aside__gallery {
+        border: 1px solid black;
+        background-image: url("../imagenes/fondo.jpg");
+        width: 450px;
+        height: 450px;
+        margin: 20px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & a {
+            font-size: 2em;
+            color: #FFD700;
+        }
+    }
+}
+
+// #index-section {
+//     .lista-horizontal {
+//         display: flex;
+//         justify-content: space-around;
+//         height: 80vh;
+//         .lista-horizontal__button {
+//             border-radius: 10px;
+//             padding: 25px;
+//             background-color: gray;
+//             margin: auto auto;
+//         }
+//         .lista-horizontal__row {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             width: 80%;
+//         }
+//     }
+// }
+// .lista-horizontal__row div {
+//     background-color: crimson;
+//     width: 250px;
+//     height: 250px;
+//     margin: 5px;
+//     color: white;
+//     border: 2px solid black;
+//     transition: 1s all;
+// }
+
+
+
+/* CARRUSEL STYLE */
+
+.altoCustom {
+    max-height: 600px;
+    overflow: hidden;
+}
+
+
+/* STYLE - INDEX FOOTER - */
+
+#index-footer {
+    .slogan-container {
+        &__p {
+            font-family: monospace;
+            font-size: 3rem;
+            margin-top: 30px;
+            margin-bottom: 100px;
+            text-align: center;
+            color: #FFD700;
+        }
+    }
+    .nav-footer {
+        &__ul {
+            &__li {
+                list-style: none;
+                display: inline-block;
+                margin: 0px 30px;
+                & a {
+                    font-size: 1.5rem;
+                    transition: .5s all;
+                }
+                &__a1 {
+                    color: tomato;
+                }
+                &__a2 {
+                    color: cyan;
+                }
+                &__a3 {
+                    color: white;
+                }
+            }
+        }
+    }
+    .container-copyright {
+        &__p {
+            font-family: 'Iceland', cursive;
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+
+
+/* ANIMACIONES */
+
+// @keyframes index-circle {
+//     from {
+//         transform: rotate(0deg);
+//         width: 60px;
+//         height: 60px;
+//     }
+//     to {
+//         transform: rotate(360deg);
+//         width: 0px;
+//         height: 0px;
+//     }
+// }
+
+@keyframes firma {
+    0% {color: blue;}
+    25% {color: green;}
+    50% {color: gray;}
+    75% {color: orange;}
+    100% {color: black;}
+}
+
+/* TRANSICIONES, TRANSFORMACIONES */
+
+#index-header {
+    .index-nav {
+        &__ul {
+            &__li {
+                & a:hover {
+                    text-decoration: underline;
+                    font-size: 2em;
+                    color: brown;
+                }
+            }
+        }
+    }
+}
+.lista-horizontal__row div:hover {
+    transform: scale(1.5, 1.5);
+    color: black;
+    background-color: white;
+    margin: 50px;
+}
+
+#index-footer {
+    .nav-footer {
+        &__ul {
+            &__li {
+                &__a1:hover {
+                    color: tomato;
+                    font-size: 2em;
+                    font-weight: bold;
+                }
+                &__a2:hover {
+                    color: cyan;
+                    font-size: 2em;
+                    font-weight: bold;
+                }
+                &__a3:hover {
+                    font-size: 2em;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    #index-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #index-article, #index-aside {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #index-aside {
+        display: flex;
+        justify-content: center;
+    }
+    .index-paragraph__p {
+        text-align: center;
+    }
+    .lista-horizontal div {
+        border: 1px solid black;
+    }
+    #footer-links ul {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .firma {
+        width: 20%;
+    }
+    #index-header #nav-index ul li { 
+        margin: 30px 8px;
+    } 
+    #index-circle {
+        display: none;
+    }
+    .lista-horizontal .img {
+        display: none;
+    }
+    .button {
+        padding: 30px;
+        margin: 20px;
+    }
+    .slogan {
+        font-size: 1.5em;
+        margin: 5px;
+    }
+    #index-footer nav ul li { 
+        list-style: none;
+        display: inline-block;
+        margin: 0px 30px;
+        text-align: center;
+    } 
+}
+
+
+@media screen and (max-width: 320px) {
+
+
+    #index-header {
+        .submenu {  
+            &__logo {
+                width: 25%;
+                height: 80%;
+            }
+            &__firma {
+                width: 30%;
+            }
+        }
+        .title-style {
+            font-size: 7rem;
+        }
+        .index-circle {
+            display: none;
+        }
+    }
+    .index-nav {
+        display: flex;
+        align-items: center;
+        &__ul {
+            display: flex;
+            flex-direction: column;
+            &__li {
+                display: block;
+            }
+        }
+    }
+    .index-paragraph__p {
+        margin-top: 10px;
+    }
+    .nav-footer__ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav-footer {
+        &__ul {
+            &__li {
+                list-style: none;
+                display: inline-block;
+                margin: 20px 30px; 
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

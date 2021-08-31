@@ -1,0 +1,74 @@
+
+/* STYLE - PRODUCTS PAGE */
+
+/* STYLE - NAV - */
+
+#products-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-products {
+    display: flex;
+    height: 50px;
+}
+#nav-products ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 48px;
+}
+#nav-products ul li {
+    margin: 0px 15px;
+}
+
+/* STYLE - MAIN PRODUCTS - */
+
+#grid-container-products {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 100px);
+    gap: 30px;
+}
+#grid-container-products div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#grid-container-products div p {
+    background-color: white;
+    padding: 10px;
+}
+#img_products1 {
+    background-image: url(../imagenes/cadena2.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    grid-column: 2/6;
+    grid-row: 2/6;
+}
+#img_products2 {
+    background-image: url(../imagenes/pulsera2.jpeg);
+    background-size: cover;
+    grid-column: 6/9;
+    grid-row: 1/5;
+}
+#img_products3 {
+    background-image: url(../imagenes/aro2.jpeg);
+    background-size: cover;
+    grid-column: 2/5;
+    grid-row: 6/10;
+}
+#img_products4 {
+    background-image: url(../imagenes/anillo2.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 6/10;
+    grid-row: 5/7;
+}
+#img_products5 {
+    background-image: url(../imagenes/cadena1.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    grid-column: 5/9;
+    grid-row: 7/10;
+}

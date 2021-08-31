@@ -1,0 +1,71 @@
+
+
+/* STYLE - CONTACT PAGE - */
+
+/* STYLE - NAV - */
+
+#contact-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .container-nav-contact {
+        display: flex;
+        height: 50px;
+        &__nav {
+            &__ul {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 48px;
+                &__li {
+                    margin: 0px 15px;
+                }
+            }
+        }
+    }
+}
+
+
+/* STYLES - FORM - */
+
+#main-contact {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    .main-contact__section {
+        border: $default-border;
+        background-color: #8A7F77;
+        width: 70%;
+        padding: 20px;
+        &__form {
+            &__names {
+                display: flex;
+                justify-content: space-between; 
+            }
+            &__consultation {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 30px;
+                &__left {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 410px;
+                    &__select {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

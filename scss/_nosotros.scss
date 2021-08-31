@@ -1,0 +1,130 @@
+
+/* STYLE - NOSOTROS PAGE - */
+
+/* STYLE - NAV - */
+
+#nosotros-header {
+    background-image: linear-gradient(white, lightpink);
+    height: 30vh;
+    .container-nav-nosotros {
+        display: flex;
+        height: 50px;
+        &__nav {
+            &__ul {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 48px;
+                &__li {
+                    margin: 0px 15px;
+                    &__a {
+                        color: #D37715;
+                        font-size: 1.7rem;
+                        transition: .5s all;
+                    }
+                    &__a:hover {
+                        color: brown;
+                    }
+                }
+            }
+        }
+    }
+    .nosotros-title {
+        height: 100px;
+        margin: 10vh auto;
+        text-align: center;
+        font-size: 3em;
+        font-family: monospace;
+        color: gold;
+        text-shadow: 5px 5px 10px black;
+    }
+}
+
+
+
+/* STYLE - MAIN NOSOTROS - */
+
+#paragraph-nosotros {
+    font-size: 2rem;
+    font-family: 'Andika New Basic', sans-serif;
+    color: #FFD700;
+    margin: 50px 20px;
+    text-align: center;
+}
+.grid-container-nosotros {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 150px);
+    &__img1 {
+        background-image: url(../imagenes/anillo1.jpeg);
+        background-size: cover;
+        grid-column: 1/4;
+        grid-row: 1/4;
+    }
+    &__img2 {
+        background-image: url(../imagenes/cadena1.jpeg);
+        background-size: cover;
+        background-position: bottom;
+        grid-column: 4/8;
+        grid-row: 2/5;
+    }
+    &__img3 {
+        background-image: url(../imagenes/aro1.jpeg);
+        background-size: cover;
+        grid-column: 8/11;
+        grid-row: 1/4;
+    }
+}
+
+main {
+    div {
+        div {
+            display: inline-block;
+            margin: 15px;
+        }
+    }
+}
+
+
+
+/* STYLE - FOOTER NOSOTROS - */
+
+.footer-nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -60px;
+    margin-bottom: 40px;
+    &__container {
+
+        @if $color-fourth == gray {
+            background-image: linear-gradient(white, gray);
+        } @else if $color-fourth == blue {
+            background-color: blue;
+        } @else {
+            background-color: $color-error;
+        }
+
+        margin: 0px 20px;
+        padding: $spacing-normal*2;
+        border-radius: 20px;
+        &__a {
+            font-size: $text-medium/2;
+            color: #D37715;
+            transition: .5s all;
+        }
+        &__a:hover {
+            color: brown;
+        }
+    }
+}
+
+
+@for $i from 1 through 3 {
+
+    .caja-#{$i} {
+        width: 200px * 2;
+    }
+
+}
+
