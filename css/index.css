@@ -685,4 +685,22 @@ div p {
   height: 30px;
 }
 
+/* FOOTER STYLE */
+.contact-footer__nav__ul {
+  display: flex;
+}
+.contact-footer__nav__ul__li {
+  margin: 0px 25px;
+}
+.contact-footer__nav__ul__li a {
+  font-family: sans-serif;
+  font-size: 2em;
+}
+.contact-footer__nav__ul__li__a1 {
+  color: tomato;
+}
+.contact-footer__nav__ul__li__a2 {
+  color: cyan;
+}
+
 /*# sourceMappingURL=index.css.map */
