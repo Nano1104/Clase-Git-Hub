@@ -329,10 +329,14 @@ html {
     flex-wrap: wrap;
   }
 
+  .nav-footer__ul {
+    display: flex;
+    justify-content: center;
+  }
   .nav-footer__ul__li {
+    display: inline-block;
     list-style: none;
     display: inline-block;
-    margin: 20px 30px;
   }
 }
 /* STYLE - NOSOTROS PAGE - */

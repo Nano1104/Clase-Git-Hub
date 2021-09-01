@@ -363,10 +363,14 @@
     }
     .nav-footer {
         &__ul {
+            display: flex;
+            justify-content: center;
             &__li {
+                display: inline-block;
                 list-style: none;
                 display: inline-block;
-                margin: 20px 30px; 
+                &__a {
+                }
             }
         }
     }
