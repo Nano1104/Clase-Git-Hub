@@ -1,0 +1,50 @@
+
+/* PAGE AROS STYLE */
+
+.grid-container-aros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 500px);
+    &__img1 {
+        background-image: url("../imagenes/aro2.jpeg");
+        background-position: bottom;
+    }
+    &__img2 {
+        background-image: url("../imagenes/aro2.jpeg");
+        background-position: bottom;
+    }
+    &__img3 {
+        background-image: url("../imagenes/aro3.jpeg");
+        background-position: bottom;
+    }
+    &__img4 {
+        background-image: url("../imagenes/aro4.jpeg");
+        background-position: center;
+    }
+    &__img5 {
+        background-image: url("../imagenes/aro5.jpeg");
+        background-position: bottom;
+    }
+    &__img6 {
+        background-image: url("../imagenes/aro6.jpeg");
+        background-position: bottom;
+    }
+    div {
+        transform: scale(.7, .7);
+        transition: 1s all;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(4px);
+    }
+}
+
+/* TRANSICIONES */
+
+.grid-container-aros {
+    div:hover {
+        transform: scale(1, 1);
+        margin: 20px;
+        filter: none;
+        box-shadow: 0px 0px 20px black;
+    }
+}

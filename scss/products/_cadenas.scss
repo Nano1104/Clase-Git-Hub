@@ -1,0 +1,45 @@
+
+/* PAGE CADENAS STYLES */
+
+.grid-container-cadenas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 500px);
+    &__img1 {
+        background-image: url("../imagenes/cadena2.jpeg");
+    }
+    &__img2 {
+        background-image: url("../imagenes/cadena3.jpeg");
+    }
+    &__img3 {
+        background-image: url("../imagenes/cadena4.jpeg");
+    }
+    &__img4 {
+        background-image: url("../imagenes/cadena5.jpeg");
+    }
+    &__img5 {
+        background-image: url("../imagenes/cadena6.jpeg");
+    }
+    &__img6 {
+        background-image: url("../imagenes/cadena2.jpeg");
+    }
+    div {
+        transform: scale(.7, .7);
+        transition: 1s all;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(4px);
+    }
+}
+
+/* TRANSICIONES */
+
+.grid-container-cadenas {
+    div:hover {
+        transform: scale(1, 1);
+        margin: 20px;
+        filter: none;
+        box-shadow: 0px 0px 20px black;
+    }
+}

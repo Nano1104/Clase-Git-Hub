@@ -1,0 +1,44 @@
+
+/* PAGE PULSERAS STYLE */
+
+.grid-container-pulseras {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 500px);
+    &__img1 {
+        background-image: url("../imagenes/pulsera1.jpeg");
+    }
+    &__img2 {
+        background-image: url("../imagenes/pulsera2.jpeg");
+    }
+    &__img3 {
+        background-image: url("../imagenes/pulsera3.jpeg");
+    }
+    &__img4 {
+        background-image: url("../imagenes/pulsera4.jpeg");
+    }
+    &__img5 {
+        background-image: url("../imagenes/pulsera5.jpeg");
+    }
+    &__img6 {
+        background-image: url("../imagenes/pulsera6.jpeg");
+    }
+    div {
+        background-size: cover;
+        background-position: center;
+        transform: scale(.7, .7);
+        transition: 1s all;
+        filter: blur(4px);
+    }
+}
+
+/* TRANSICIONES */
+
+.grid-container-pulseras {
+    div:hover {
+        transform: scale(1, 1);
+        margin: 20px;
+        filter: none;
+        box-shadow: 0px 0px 20px black;
+    }
+}

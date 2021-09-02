@@ -4,9 +4,14 @@
 @import "normalize.scss";
 
 /* PAGES */
-@import "main.scss";
-@import "nosotros.scss";
-@import "productos.scss";
-@import "novedades.scss";
-@import "contacto.scss";
+@import "./main";
+@import "./nosotros";
+@import "./productos";
+@import "./novedades";
+@import "./contacto";
+
+@import "products/anillos";
+@import "products/aros";
+@import "products/cadenas";
+@import "products/pulseras";
 

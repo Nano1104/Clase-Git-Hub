@@ -8,7 +8,7 @@
 *::before {
   margin: 0px;
   padding: 0px;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 ul,
@@ -492,9 +492,6 @@ main div div {
   font-family: sans-serif;
   transition: 0.2s all;
 }
-#products-header .nav__nav__ul__li__a:hover {
-  color: brown;
-}
 
 /* STYLE - MAIN PRODUCTS - */
 #grid-container-products {
@@ -550,6 +547,10 @@ main div div {
 }
 
 /* TRANSICIONES */
+#products-header .nav__nav__ul__li__a:hover {
+  color: brown;
+}
+
 #grid-container-products div a:hover {
   font-size: 3em;
   font-weight: bold;
@@ -730,6 +731,174 @@ div p {
 }
 .contact-footer__nav__ul__li__a2 {
   color: cyan;
+}
+
+/* PAGE ANILLOS SYTLE */
+.grid-container-anillos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 500px);
+}
+.grid-container-anillos__img1 {
+  background-image: url("../imagenes/anillo2.jpeg");
+}
+.grid-container-anillos__img2 {
+  background-image: url("../imagenes/anillo2.jpeg");
+}
+.grid-container-anillos__img3 {
+  background-image: url("../imagenes/anillo3.jpeg");
+}
+.grid-container-anillos__img4 {
+  background-image: url("../imagenes/anillo4.jpeg");
+}
+.grid-container-anillos__img5 {
+  background-image: url("../imagenes/anillo5.jpeg");
+}
+.grid-container-anillos__img6 {
+  background-image: url("../imagenes/anillo6.jpeg");
+}
+.grid-container-anillos div {
+  transform: scale(0.7, 0.7);
+  transition: 1s all;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(4px);
+}
+
+/* TRANSICIONES */
+.grid-container-anillos div:hover {
+  transform: scale(1, 1);
+  margin: 20px;
+  filter: none;
+  box-shadow: 0px 0px 20px black;
+}
+
+/* PAGE AROS STYLE */
+.grid-container-aros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 500px);
+}
+.grid-container-aros__img1 {
+  background-image: url("../imagenes/aro2.jpeg");
+  background-position: bottom;
+}
+.grid-container-aros__img2 {
+  background-image: url("../imagenes/aro2.jpeg");
+  background-position: bottom;
+}
+.grid-container-aros__img3 {
+  background-image: url("../imagenes/aro3.jpeg");
+  background-position: bottom;
+}
+.grid-container-aros__img4 {
+  background-image: url("../imagenes/aro4.jpeg");
+  background-position: center;
+}
+.grid-container-aros__img5 {
+  background-image: url("../imagenes/aro5.jpeg");
+  background-position: bottom;
+}
+.grid-container-aros__img6 {
+  background-image: url("../imagenes/aro6.jpeg");
+  background-position: bottom;
+}
+.grid-container-aros div {
+  transform: scale(0.7, 0.7);
+  transition: 1s all;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(4px);
+}
+
+/* TRANSICIONES */
+.grid-container-aros div:hover {
+  transform: scale(1, 1);
+  margin: 20px;
+  filter: none;
+  box-shadow: 0px 0px 20px black;
+}
+
+/* PAGE CADENAS STYLES */
+.grid-container-cadenas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 500px);
+}
+.grid-container-cadenas__img1 {
+  background-image: url("../imagenes/cadena2.jpeg");
+}
+.grid-container-cadenas__img2 {
+  background-image: url("../imagenes/cadena3.jpeg");
+}
+.grid-container-cadenas__img3 {
+  background-image: url("../imagenes/cadena4.jpeg");
+}
+.grid-container-cadenas__img4 {
+  background-image: url("../imagenes/cadena5.jpeg");
+}
+.grid-container-cadenas__img5 {
+  background-image: url("../imagenes/cadena6.jpeg");
+}
+.grid-container-cadenas__img6 {
+  background-image: url("../imagenes/cadena2.jpeg");
+}
+.grid-container-cadenas div {
+  transform: scale(0.7, 0.7);
+  transition: 1s all;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(4px);
+}
+
+/* TRANSICIONES */
+.grid-container-cadenas div:hover {
+  transform: scale(1, 1);
+  margin: 20px;
+  filter: none;
+  box-shadow: 0px 0px 20px black;
+}
+
+/* PAGE PULSERAS STYLE */
+.grid-container-pulseras {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 500px);
+}
+.grid-container-pulseras__img1 {
+  background-image: url("../imagenes/pulsera1.jpeg");
+}
+.grid-container-pulseras__img2 {
+  background-image: url("../imagenes/pulsera2.jpeg");
+}
+.grid-container-pulseras__img3 {
+  background-image: url("../imagenes/pulsera3.jpeg");
+}
+.grid-container-pulseras__img4 {
+  background-image: url("../imagenes/pulsera4.jpeg");
+}
+.grid-container-pulseras__img5 {
+  background-image: url("../imagenes/pulsera5.jpeg");
+}
+.grid-container-pulseras__img6 {
+  background-image: url("../imagenes/pulsera6.jpeg");
+}
+.grid-container-pulseras div {
+  background-size: cover;
+  background-position: center;
+  transform: scale(0.7, 0.7);
+  transition: 1s all;
+  filter: blur(4px);
+}
+
+/* TRANSICIONES */
+.grid-container-pulseras div:hover {
+  transform: scale(1, 1);
+  margin: 20px;
+  filter: none;
+  box-shadow: 0px 0px 20px black;
 }
 
 /*# sourceMappingURL=index.css.map */

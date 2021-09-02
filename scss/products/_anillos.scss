@@ -1,0 +1,45 @@
+
+/* PAGE ANILLOS SYTLE */
+
+.grid-container-anillos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 500px);
+    &__img1 {
+        background-image: url("../imagenes/anillo2.jpeg");
+    }
+    &__img2 {
+        background-image: url("../imagenes/anillo2.jpeg");
+    }
+    &__img3 {
+        background-image: url("../imagenes/anillo3.jpeg");
+    }
+    &__img4 {
+        background-image: url("../imagenes/anillo4.jpeg");
+    }
+    &__img5 {
+        background-image: url("../imagenes/anillo5.jpeg");
+    }
+    &__img6 {
+        background-image: url("../imagenes/anillo6.jpeg");
+    }
+    div {
+        transform: scale(.7, .7);
+        transition: 1s all;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(4px);
+    }
+}
+
+/* TRANSICIONES */
+
+.grid-container-anillos {
+    div:hover {
+        transform: scale(1, 1);
+        margin: 20px;
+        filter: none;
+        box-shadow: 0px 0px 20px black;
+    }
+}
