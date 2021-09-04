@@ -7,7 +7,6 @@
     background-image: url("../imagenes/fondo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -24,7 +23,6 @@
             width: 5%;
             height: 50%;
             margin: 20px;
-            border-radius: 50px;
         }
         &__firma {
             font-size: 2rem;
@@ -56,17 +54,23 @@
         display: none;
     }
     .index-nav {
-        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        margin-top: 330px;
+        background-color: gray;
+        opacity: .7;
         &__ul {
-            display: flex;
             transition: 1s all;
+            margin-top: 10px;
             &__li { 
                 margin: 15px 25px;
-            }
-            &__li a {
-                color: #D37715;
-                font-size: 1.5em;
-                transition: .3s all;
+                display: inline-block;
+                &__a {
+                    color: black;
+                    font-size: $text-normal+.1em;
+                    transition: .5s all;
+                    font-family: 'Azeret Mono', monospace;
+                }
             }
         }
     }
@@ -83,25 +87,43 @@
     margin: 50px 0px;
     .index-paragraph {
         font-size: 2.7rem;
-        font-family: 'Andika New Basic', sans-serif;
+        font-family: monospace;
         color: #FFD700;
         margin-bottom: 40px;
         margin-right: 20px;
         margin-left: 15px;
         text-align: center;
     }
-    .index-aside__gallery {
-        border: 1px solid black;
-        background-image: url("../imagenes/fondo.jpg");
-        width: 450px;
-        height: 450px;
-        margin: 20px 40px;
+    .index-aside {
         display: flex;
         justify-content: center;
         align-items: center;
-        & a {
+        margin: 20px 40px;
+        border: 10px double black;
+        box-shadow: 0px 0px 20px black;
+        &__gallery {
+            position: relative;
+            border: 1px solid black;
+            background-image: url("../imagenes/galleryfondo.png");
+            background-size: 200%;
+            background-size: cover;
+            background-position: center;
+            filter: blur(4.5px);
+            width: 450px;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__a {
+            position: absolute;
             font-size: 2em;
-            color: #FFD700;
+            color: black;
+            transition: .3s all;
+        }
+        &__a:hover {
+            font-size: $text-medium + .2em;
+            text-decoration: underline;
         }
     }
 }
@@ -143,7 +165,9 @@
     max-height: 600px;
     overflow: hidden;
 }
-
+.carousel div img {
+    box-shadow: 0px 0px 10px black;
+}
 
 /* STYLE - INDEX FOOTER - */
 
@@ -224,7 +248,7 @@
                 & a:hover {
                     text-decoration: underline;
                     font-size: 2em;
-                    color: brown;
+                    color: gold;
                 }
             }
         }
@@ -236,7 +260,6 @@
     background-color: white;
     margin: 50px;
 }
-
 #index-footer {
     .nav-footer {
         &__ul {

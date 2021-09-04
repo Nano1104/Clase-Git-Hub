@@ -4,11 +4,13 @@
 /* STYLE - NAV - */
 
 #nosotros-header {
-    background-image: linear-gradient(white, lightpink);
-    height: 30vh;
+    // background-image: linear-gradient(white, lightpink);
+    height: 70vh;
     .container-nav-nosotros {
         display: flex;
-        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
         &__nav {
             &__ul {
                 display: flex;
@@ -16,22 +18,37 @@
                 align-items: center;
                 height: 48px;
                 &__li {
-                    margin: 0px 15px;
+                    margin: 0px 20px;
                     &__a {
                         color: #D37715;
-                        font-size: 1.7rem;
+                        font-size: 1.5em;
                         transition: .5s all;
+                        font-family: sans-serif;
                     }
                     &__a:hover {
                         color: brown;
+                        font-weight: bold;
+                        font-size: 2em;
                     }
                 }
             }
         }
+        &__logo {
+            background-image: url("../imagenes/logo.jpeg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 6%;
+            height: 100px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
     }
     .nosotros-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 100px;
-        margin: 10vh auto;
         text-align: center;
         font-size: 3em;
         font-family: monospace;
@@ -45,7 +62,7 @@
 /* STYLE - MAIN NOSOTROS - */
 
 #paragraph-nosotros {
-    font-size: 2rem;
+    font-size: $text-medium; 
     font-family: 'Andika New Basic', sans-serif;
     color: #FFD700;
     margin: 50px 20px;
@@ -55,6 +72,7 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(5, 150px);
+    border: 2px solid white;
     &__img1 {
         background-image: url(../imagenes/anillo2.jpeg);
         background-size: cover;
@@ -124,7 +142,8 @@ main {
         padding: $spacing-normal*2;
         border-radius: 20px;
         &__a {
-            font-size: $text-medium/2;
+            font-family: monospace;
+            font-size: $text-normal;
             color: #D37715;
             transition: .5s all;
         }
@@ -132,6 +151,12 @@ main {
             color: brown;
         }
     }
+    // &__logo {
+    //     background-image: url("../imagenes/logo.jpeg");
+    //     outline: 2px solid black;
+    //     width: 10%;
+    //     height: 100px;
+    // }
 }
 
 
