@@ -20,8 +20,9 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            width: 5%;
-            height: 50%;
+            border-radius: 50%;
+            width: 5vw;
+            height: 5vw;
             margin: 20px;
         }
         &__firma {
@@ -65,6 +66,7 @@
             &__li { 
                 margin: 15px 25px;
                 display: inline-block;
+                text-align: center;
                 &__a {
                     color: black;
                     font-size: $text-normal+.1em;
@@ -95,22 +97,21 @@
         text-align: center;
     }
     .index-aside {
+        background-image: url("../imagenes/galleryfondo.png");
+        background-size: 200%;
+        background-size: cover;
+        background-position: center;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 80vw;
+        height: 35vw;
         margin: 20px 40px;
         border: 10px double black;
         box-shadow: 0px 0px 20px black;
         &__gallery {
-            position: relative;
             border: 1px solid black;
-            background-image: url("../imagenes/galleryfondo.png");
-            background-size: 200%;
-            background-size: cover;
-            background-position: center;
             filter: blur(4.5px);
-            width: 450px;
-            height: 450px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -350,10 +351,12 @@
 
 
     #index-header {
+        background-position: center;
         .submenu {  
+            height: 40vw;
             &__logo {
-                width: 25%;
-                height: 80%;
+                width: 20vw;
+                height: 20vw;
             }
             &__firma {
                 width: 30%;
@@ -365,39 +368,47 @@
         .index-circle {
             display: none;
         }
-    }
-    .index-nav {
-        display: flex;
-        align-items: center;
-        &__ul {
-            display: flex;
-            flex-direction: column;
-            &__li {
-                display: block;
-            }
-        }
-    }
-    .index-paragraph__p {
-        margin-top: 10px;
-    }
-    .nav-footer__ul {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .nav-footer {
-        &__ul {
+        .index-nav {
+            margin-top: -5px;
             display: flex;
             justify-content: center;
-            &__li {
-                display: inline-block;
-                list-style: none;
-                display: inline-block;
-                &__a {
+            &__ul {
+                display: flex;
+                flex-direction: column;
+                &__li {
+                    display: block;
+                    &__a {
+                        font-size: $text-normal - .4em;
+                    }
                 }
             }
         }
     }
 }
+
+
+    
+//     .index-paragraph__p {
+//         margin-top: 10px;
+//     }
+//     .nav-footer__ul {
+//         display: flex;
+//         flex-wrap: wrap;
+//     }
+//     .nav-footer {
+//         &__ul {
+//             display: flex;
+//             justify-content: center;
+//             &__li {
+//                 display: inline-block;
+//                 list-style: none;
+//                 display: inline-block;
+//                 &__a {
+//                 }
+//             }
+//         }
+//     }
+// }
 
 
 

@@ -62,8 +62,9 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 5%;
-  height: 50%;
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
   margin: 20px;
 }
 #index-header .submenu__firma {
@@ -108,6 +109,7 @@ html {
 #index-header .index-nav__ul__li {
   margin: 15px 25px;
   display: inline-block;
+  text-align: center;
 }
 #index-header .index-nav__ul__li__a {
   color: black;
@@ -133,23 +135,22 @@ html {
   text-align: center;
 }
 #index-main .index-aside {
+  background-image: url("../imagenes/galleryfondo.png");
+  background-size: 200%;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80vw;
+  height: 35vw;
   margin: 20px 40px;
   border: 10px double black;
   box-shadow: 0px 0px 20px black;
 }
 #index-main .index-aside__gallery {
-  position: relative;
   border: 1px solid black;
-  background-image: url("../imagenes/galleryfondo.png");
-  background-size: 200%;
-  background-size: cover;
-  background-position: center;
   filter: blur(4.5px);
-  width: 450px;
-  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,9 +323,15 @@ html {
   }
 }
 @media screen and (max-width: 320px) {
+  #index-header {
+    background-position: center;
+  }
+  #index-header .submenu {
+    height: 40vw;
+  }
   #index-header .submenu__logo {
-    width: 25%;
-    height: 80%;
+    width: 20vw;
+    height: 20vw;
   }
   #index-header .submenu__firma {
     width: 30%;
@@ -335,36 +342,20 @@ html {
   #index-header .index-circle {
     display: none;
   }
-
-  .index-nav {
-    display: flex;
-    align-items: center;
-  }
-  .index-nav__ul {
-    display: flex;
-    flex-direction: column;
-  }
-  .index-nav__ul__li {
-    display: block;
-  }
-
-  .index-paragraph__p {
-    margin-top: 10px;
-  }
-
-  .nav-footer__ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .nav-footer__ul {
+  #index-header .index-nav {
+    margin-top: -5px;
     display: flex;
     justify-content: center;
   }
-  .nav-footer__ul__li {
-    display: inline-block;
-    list-style: none;
-    display: inline-block;
+  #index-header .index-nav__ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #index-header .index-nav__ul__li {
+    display: block;
+  }
+  #index-header .index-nav__ul__li__a {
+    font-size: 1.1em;
   }
 }
 /* STYLE - NOSOTROS PAGE - */
