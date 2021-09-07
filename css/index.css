@@ -30,6 +30,7 @@ a {
   width: 5%;
   height: 50%;
   margin: 20px;
+  border-radius: 10%;
 }
 
 body {
@@ -57,16 +58,6 @@ html {
   justify-content: space-between;
   height: 150px;
 }
-#index-header .submenu__logo {
-  background-image: url("../imagenes/logo.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-  width: 5vw;
-  height: 5vw;
-  margin: 20px;
-}
 #index-header .submenu__firma {
   font-size: 2rem;
   display: inline-block;
@@ -79,7 +70,7 @@ html {
   font-size: 1.5em;
 }
 #index-header .title-style {
-  font-size: 8rem;
+  font-size: 7em;
   font-family: monospace;
   color: gold;
   text-shadow: 5px 5px 10px black;
@@ -123,7 +114,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 0px;
+  margin: 100px 0px;
 }
 #index-main .index-paragraph {
   font-size: 2.7rem;
@@ -136,7 +127,6 @@ html {
 }
 #index-main .index-aside {
   background-image: url("../imagenes/galleryfondo.png");
-  background-size: 200%;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -144,7 +134,7 @@ html {
   align-items: center;
   width: 80vw;
   height: 35vw;
-  margin: 20px 40px;
+  margin: 0px 40px;
   border: 10px double black;
   box-shadow: 0px 0px 20px black;
 }
@@ -168,7 +158,7 @@ html {
 
 /* CARRUSEL STYLE */
 .altoCustom {
-  max-height: 600px;
+  height: 40vw;
   overflow: hidden;
 }
 
@@ -257,69 +247,140 @@ html {
   font-weight: bold;
 }
 
+/* RESPONSIVE */
+@media screen and (max-width: 1140px) {
+  #index-header {
+    background-position: center;
+  }
+  #index-header .submenu .logo {
+    width: 7vw;
+    height: 7vw;
+  }
+  #index-header .submenu__firma {
+    margin-right: 50px;
+  }
+  #index-header .index-nav {
+    margin-top: 125px;
+  }
+  #index-header .index-nav__ul {
+    display: flex;
+  }
+
+  #index-main .index-aside {
+    width: 100vw;
+  }
+
+  .altoCustom {
+    height: 50vw;
+  }
+
+  .carousel-inner div img {
+    width: 640px;
+    height: 780px;
+  }
+}
 @media screen and (max-width: 1024px) {
+  #index-header .submenu .logo {
+    width: 7vw;
+    height: 7vw;
+  }
+  #index-header .index-nav {
+    margin-top: 125px;
+  }
+  #index-main .index-aside {
+    width: 100vw;
+  }
+
   #index-main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #index-main .index-aside {
+    width: 70vw;
   }
 
-  #index-article, #index-aside {
+  .altoCustom {
+    height: 40vw;
+  }
+
+  .carousel-inner div img {
+    width: 640px;
+    height: 680px;
+  }
+}
+@media screen and (max-width: 720px) {
+  #index-header .submenu .logo {
+    width: 7vw;
+    height: 7vw;
+  }
+  #index-header .submenu__firma {
+    margin-right: 50px;
+  }
+  #index-header .index-nav__ul {
     display: flex;
-    flex-wrap: wrap;
   }
 
-  #index-aside {
+  #index-main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+  }
+  #index-main .index-aside {
+    width: 70vw;
   }
 
-  .index-paragraph__p {
-    text-align: center;
+  .altoCustom {
+    height: 40vw;
   }
 
-  .lista-horizontal div {
-    border: 1px solid black;
-  }
-
-  #footer-links ul {
-    display: flex;
-    justify-content: center;
+  .carousel-inner div img {
+    width: 340px;
+    height: 380px;
   }
 }
 @media screen and (max-width: 480px) {
-  .firma {
-    width: 20%;
+  #index-header .submenu .logo {
+    width: 15vw;
+    height: 15vw;
+  }
+  #index-header .submenu__firma {
+    margin-right: 70px;
+  }
+  #index-header .title-style {
+    font-size: 6em;
+    margin-bottom: 20px;
+  }
+  #index-header .index-nav {
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+  }
+  #index-header .index-nav__ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #index-header .index-nav__ul__li {
+    display: block;
+  }
+  #index-header .index-nav__ul__li__a {
+    font-size: 1.1em;
   }
 
-  #index-header #nav-index ul li {
-    margin: 30px 8px;
+  #index-main {
+    display: flex;
+    flex-direction: column;
+  }
+  #index-main .index-aside {
+    width: 70vw;
+    height: 70vw;
   }
 
-  #index-circle {
-    display: none;
+  .altoCustom {
+    height: 70vw;
   }
 
-  .lista-horizontal .img {
-    display: none;
-  }
-
-  .button {
-    padding: 30px;
-    margin: 20px;
-  }
-
-  .slogan {
-    font-size: 1.5em;
-    margin: 5px;
-  }
-
-  #index-footer nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0px 30px;
-    text-align: center;
+  .carousel-inner div img {
+    width: 340px;
+    height: 380px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -356,6 +417,24 @@ html {
   }
   #index-header .index-nav__ul__li__a {
     font-size: 1.1em;
+  }
+
+  #index-main {
+    display: flex;
+    flex-direction: column;
+  }
+  #index-main .index-aside {
+    width: 70vw;
+    height: 80vw;
+  }
+
+  .altoCustom {
+    height: 80vw;
+  }
+
+  .carousel-inner div img {
+    width: 340px;
+    height: 380px;
   }
 }
 /* STYLE - NOSOTROS PAGE - */
