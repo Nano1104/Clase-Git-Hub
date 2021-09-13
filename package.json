@@ -1,18 +1,27 @@
 {
-  "name": "SITIO",
+  "name": "misitio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-sass": "nodemon -e scss -x \"npm run build-sass\"",
-    "build-sass": "node-sass --include-path scss scss/index.scss css/index.css" 
+    "build-sass": "node-sass --include-path scss scss/index.scss css/index.css"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nano1104/Clase-Git-Hub.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nano1104/Clase-Git-Hub/issues"
+  },
+  "homepage": "https://github.com/Nano1104/Clase-Git-Hub#readme",
   "devDependencies": {
-    "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1"
   }
 }
