@@ -4,8 +4,8 @@
 /* STYLE - NAV - */
 
 #nosotros-header {
-    // background-image: linear-gradient(white, lightpink);
     height: 70vh;
+    outline: 2px solid white;
     .container-nav-nosotros {
         display: flex;
         justify-content: space-between;
@@ -21,14 +21,15 @@
                     margin: 0px 20px;
                     &__a {
                         color: #D37715;
-                        font-size: 1.5em;
-                        transition: .5s all;
+                        font-size: $text-normal;
+                        transition: .3s all;
                         font-family: sans-serif;
                     }
                     &__a:hover {
-                        color: brown;
+                        font-size: $text-normal + .5em;
+                        color: gold;
                         font-weight: bold;
-                        font-size: 2em;
+                        text-decoration: underline;
                     }
                 }
             }
@@ -48,12 +49,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100px;
         text-align: center;
-        font-size: 3em;
+        font-size: $text-big;
         font-family: monospace;
         color: gold;
         text-shadow: 5px 5px 10px black;
+        text-align: center;
     }
 }
 
@@ -72,7 +73,6 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(5, 150px);
-    border: 2px solid white;
     &__img1 {
         background-image: url(../imagenes/anillo2.jpeg);
         background-size: cover;
@@ -160,11 +160,9 @@ main {
 }
 
 
-@for $i from 1 through 3 {
+/* TRANSICIONES */
 
-    .caja-#{$i} {
-        width: 200px * 2;
-    }
-
+.container-nav-nosotros__nav__ul__li__a:hover {
+    
 }
 

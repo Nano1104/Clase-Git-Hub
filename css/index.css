@@ -268,7 +268,7 @@ html {
     height: 40vw; }
   .carousel-inner div img {
     width: 340px;
-    height: 380px; } }
+    height: 580px; } }
 
 @media screen and (max-width: 480px) {
   #index-header .submenu .logo {
@@ -342,7 +342,8 @@ html {
 /* STYLE - NOSOTROS PAGE - */
 /* STYLE - NAV - */
 #nosotros-header {
-  height: 70vh; }
+  height: 70vh;
+  outline: 2px solid white; }
   #nosotros-header .container-nav-nosotros {
     display: flex;
     justify-content: space-between;
@@ -358,12 +359,13 @@ html {
         #nosotros-header .container-nav-nosotros__nav__ul__li__a {
           color: #D37715;
           font-size: 1.5em;
-          transition: .5s all;
+          transition: .3s all;
           font-family: sans-serif; }
         #nosotros-header .container-nav-nosotros__nav__ul__li__a:hover {
-          color: brown;
+          font-size: 2em;
+          color: gold;
           font-weight: bold;
-          font-size: 2em; }
+          text-decoration: underline; }
     #nosotros-header .container-nav-nosotros__logo {
       background-image: url("../imagenes/logo.jpeg");
       background-position: center;
@@ -377,12 +379,12 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
     text-align: center;
-    font-size: 3em;
+    font-size: 7em;
     font-family: monospace;
     color: gold;
-    text-shadow: 5px 5px 10px black; }
+    text-shadow: 5px 5px 10px black;
+    text-align: center; }
 
 /* STYLE - MAIN NOSOTROS - */
 #paragraph-nosotros {
@@ -395,8 +397,7 @@ html {
 .grid-container-nosotros {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(5, 150px);
-  border: 2px solid white; }
+  grid-template-rows: repeat(5, 150px); }
   .grid-container-nosotros__img1 {
     background-image: url(../imagenes/anillo2.jpeg);
     background-size: cover;
@@ -450,15 +451,7 @@ main div div {
     .footer-nosotros__container__a:hover {
       color: brown; }
 
-.caja-1 {
-  width: 400px; }
-
-.caja-2 {
-  width: 400px; }
-
-.caja-3 {
-  width: 400px; }
-
+/* TRANSICIONES */
 /* STYLE - PRODUCTS PAGE */
 /* STYLE - NAV - */
 #products-header {
