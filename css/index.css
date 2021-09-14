@@ -365,7 +365,7 @@ html {
           font-size: 2em;
           color: gold;
           font-weight: bold;
-          text-decoration: underline; }
+          text-shadow: 0px 0px 10px black; }
     #nosotros-header .container-nav-nosotros__logo {
       background-image: url("../imagenes/logo.jpeg");
       background-position: center;
@@ -534,7 +534,7 @@ main div div {
   color: gold;
   font-size: 2em;
   font-weight: bold;
-  text-decoration: underline; }
+  text-shadow: 0px 0px 10px black; }
 
 #grid-container-products div a:hover {
   font-size: 3em;
