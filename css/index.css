@@ -30,7 +30,7 @@ a {
   border-radius: 10%; }
 
 body {
-  background-image: radial-gradient(circle 1000px, gray, black); }
+  background-image: radial-gradient(circle 1000px, dimgray, black); }
 
 html {
   font-size: 62.5%;
@@ -61,7 +61,7 @@ html {
     #index-header .submenu__firma p {
       font-size: 1.5em; }
   #index-header .title-style {
-    font-size: 7em;
+    font-size: 6em;
     font-family: monospace;
     color: gold;
     text-shadow: 5px 5px 10px black;
@@ -277,7 +277,7 @@ html {
   #index-header .submenu__firma {
     margin-right: 70px; }
   #index-header .title-style {
-    font-size: 6em;
+    font-size: 5em;
     margin-bottom: 20px; }
   #index-header .index-nav {
     margin-top: -5px;
@@ -342,8 +342,7 @@ html {
 /* STYLE - NOSOTROS PAGE - */
 /* STYLE - NAV - */
 #nosotros-header {
-  height: 70vh;
-  outline: 2px solid white; }
+  height: 70vh; }
   #nosotros-header .container-nav-nosotros {
     display: flex;
     justify-content: space-between;
@@ -357,13 +356,14 @@ html {
       #nosotros-header .container-nav-nosotros__nav__ul__li {
         margin: 0px 20px; }
         #nosotros-header .container-nav-nosotros__nav__ul__li__a {
-          color: #D37715;
-          font-size: 1.5em;
+          color: #FFD700;
+          font-size: 2.1em;
           transition: .3s all;
-          font-family: sans-serif; }
+          font-family: monospace;
+          font-weight: 500; }
         #nosotros-header .container-nav-nosotros__nav__ul__li__a:hover {
-          font-size: 2em;
-          color: gold;
+          font-size: 2.7em;
+          color: orange;
           font-weight: bold;
           text-shadow: 0px 0px 10px black; }
     #nosotros-header .container-nav-nosotros__logo {
@@ -371,25 +371,22 @@ html {
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-      width: 6%;
+      width: 10vh;
+      height: 10vh;
       height: 100px;
-      margin-top: 20px;
-      margin-right: 20px; }
+      margin: 10px; }
   #nosotros-header .nosotros-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 7em;
-    font-family: monospace;
-    color: gold;
+    font-size: 3.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: khaki;
     text-shadow: 5px 5px 10px black;
-    text-align: center; }
+    text-align: center;
+    margin-top: 30vh; }
 
 /* STYLE - MAIN NOSOTROS - */
 #paragraph-nosotros {
-  font-size: 3em;
-  font-family: 'Andika New Basic', sans-serif;
+  font-size: 3.5em;
+  font-family: monospace;
   color: #FFD700;
   margin: 50px 20px;
   text-align: center; }
@@ -420,6 +417,7 @@ html {
   .grid-container-nosotros__img3 {
     background-image: url(../imagenes/aro2.jpeg);
     background-size: cover;
+    background-position: bottom;
     grid-column: 8/11;
     grid-row: 1/4;
     box-shadow: 5px 5px 10px black;
@@ -439,19 +437,144 @@ main div div {
   margin-top: -60px;
   margin-bottom: 40px; }
   .footer-nosotros__container {
-    background-image: linear-gradient(white, gray);
-    margin: 0px 20px;
-    padding: 20px;
-    border-radius: 20px; }
+    margin: 0px 20px; }
     .footer-nosotros__container__a {
-      font-family: monospace;
-      font-size: 1.5em;
-      color: #D37715;
-      transition: .5s all; }
+      font-family: calibri;
+      font-size: 2em;
+      color: gold;
+      transition: .5s all;
+      letter-spacing: 5px; }
     .footer-nosotros__container__a:hover {
-      color: brown; }
+      color: #ffa600; }
+  .footer-nosotros__logo {
+    display: none;
+    background-image: url("../imagenes/logo.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15vh;
+    height: 15vh; }
 
-/* TRANSICIONES */
+/* RESPONSIVE */
+@media screen and (max-width: 1140px) {
+  .nosotros-title {
+    margin-top: 100px; } }
+
+@media screen and (max-width: 800px) {
+  .grid-container-nosotros__img1 {
+    grid-column: 1/5;
+    grid-row: 1/3; }
+  .grid-container-nosotros__img2 {
+    grid-column: 7/11;
+    grid-row: 1/3; }
+  .grid-container-nosotros__img3 {
+    grid-column: 3/8;
+    grid-row: 3/5; } }
+
+@media screen and (max-width: 720px) {
+  #nosotros-header .container-nav-nosotros {
+    display: flex;
+    align-items: center; }
+    #nosotros-header .container-nav-nosotros__nav__ul__li {
+      margin: 0px 15px; }
+      #nosotros-header .container-nav-nosotros__nav__ul__li__a {
+        font-size: 1.9em; }
+      #nosotros-header .container-nav-nosotros__nav__ul__li__a:hover {
+        font-size: 2.5em; }
+    #nosotros-header .container-nav-nosotros__logo {
+      width: 10vh;
+      height: 10vh; }
+  #nosotros-header .nosotros-title {
+    font-size: 3em; }
+  .grid-container-nosotros__img1 {
+    grid-column: 2/6;
+    grid-row: 1/3; }
+  .grid-container-nosotros__img2 {
+    grid-column: 6/10;
+    grid-row: 1/3; }
+  .grid-container-nosotros__img3 {
+    grid-column: 3/9;
+    grid-row: 3/5; } }
+
+@media screen and (max-width: 620px) {
+  #nosotros-header .container-nav-nosotros__logo {
+    display: none; } }
+
+@media screen and (max-width: 520px) {
+  #nosotros-header .container-nav-nosotros__nav__ul__li__a {
+    font-size: 1.5em; }
+  #nosotros-header .container-nav-nosotros__nav__ul__li__a:hover {
+    font-size: 2em; }
+  #nosotros-header .container-nav-nosotros__logo {
+    display: none; }
+  #nosotros-header .nosotros-title {
+    font-size: 2em; }
+  .grid-container-nosotros__img1 {
+    grid-column: 1/6; }
+  .grid-container-nosotros__img2 {
+    grid-column: 6/11; }
+  .footer-nosotros__container {
+    text-align: center; }
+    .footer-nosotros__container__a {
+      font-size: 1.5em; }
+  .footer-nosotros__logo {
+    display: inline-block;
+    margin: 5px;
+    width: 10vh;
+    height: 10vh; } }
+
+@media screen and (max-width: 440px) {
+  #nosotros-header .container-nav-nosotros__nav__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    #nosotros-header .container-nav-nosotros__nav__ul__li {
+      padding: 10px; }
+      #nosotros-header .container-nav-nosotros__nav__ul__li__a:hover {
+        font-size: 1.5em; } }
+
+@media screen and (max-width: 380px) {
+  .grid-container-nosotros__img1 {
+    grid-column: 3/9;
+    grid-row: 2/3;
+    background-position: center; }
+  .grid-container-nosotros__img2 {
+    grid-column: 3/9;
+    grid-row: 3/4; }
+  .grid-container-nosotros__img3 {
+    grid-column: 3/9;
+    grid-row: 4/5; }
+  .footer-nosotros__logo {
+    width: 14vh; } }
+
+@media screen and (max-width: 320px) {
+  #nosotros-header .container-nav-nosotros__nav__ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    #nosotros-header .container-nav-nosotros__nav__ul__li {
+      padding: 10px; }
+      #nosotros-header .container-nav-nosotros__nav__ul__li__a:hover {
+        font-size: 1.5em; }
+  .grid-container-nosotros__img1 {
+    grid-column: 3/9;
+    grid-row: 2/3;
+    background-position: center; }
+  .grid-container-nosotros__img2 {
+    grid-column: 3/9;
+    grid-row: 3/4; }
+  .grid-container-nosotros__img3 {
+    grid-column: 3/9;
+    grid-row: 4/5; }
+  .footer-nosotros {
+    display: flex;
+    flex-direction: column; }
+    .footer-nosotros__container {
+      margin: 10px; }
+    .footer-nosotros__logo {
+      width: 10vh;
+      height: 10vh; } }
+
 /* STYLE - PRODUCTS PAGE */
 /* STYLE - NAV - */
 #products-header {
