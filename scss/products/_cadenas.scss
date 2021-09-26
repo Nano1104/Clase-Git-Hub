@@ -30,6 +30,15 @@
         background-repeat: no-repeat;
         background-size: cover;
         filter: blur(4px);
+        p {
+            font-family: 'Oswald', sans-serif;
+            display: none;
+            font-size: $text-medium;
+            position: absolute;
+            bottom: 0;
+            margin: 10px;
+            transition: .5s all;
+        }
     }
 }
 
@@ -41,5 +50,8 @@
         margin: 20px;
         filter: none;
         box-shadow: 0px 0px 20px black;
+        p {
+            display: block;
+        }
     }
 }
