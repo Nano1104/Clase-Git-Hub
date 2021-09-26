@@ -54,6 +54,24 @@
     grid-template-rows: repeat(10, 100px);
     gap: 30px;
     margin-top: 100px;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 10px black;
+        border: 4px inset black;
+    }
+    div a {
+        font-family: 'Oswald', sans-serif;
+        font-size: $text-medium - .5em;
+        color: black;
+        transition: .2s all;
+    }
+    div a:hover {
+        font-size: 3.5em;
+        font-weight: bold;
+        color: black;
+    }
     .grid-container-products__img1 {
         background-image: url(../imagenes/cadena2.jpeg);
         background-size: cover;
@@ -81,34 +99,15 @@
         grid-row: 5/7;
     }
     .grid-container-products__img5 {
-        background-image: url(../imagenes/cadena1.jpeg);
+        background-image: url(../imagenes/galleryfondo.png);
         background-size: cover;
         background-position: bottom;
         grid-column: 5/9;
         grid-row: 7/10;
     }
-    div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0px 0px 10px black;
-    }
-    div a {
-        font-family: sans-serif;
-        font-size: 2em;
-        color: black;
-        transition: .2s all;
-    }
 }
 
 
-/* TRANSICIONES */
 
-#grid-container-products {
-    div a:hover {
-        font-size: 3em;
-        font-weight: bold;
-        text-decoration: underline;
-        color: gold;
-    }
-}
+
+
