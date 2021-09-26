@@ -97,11 +97,18 @@ html {
         margin: 15px 25px;
         display: inline-block;
         text-align: center; }
+        #index-header .index-nav__ul__li i {
+          font-size: 1.5em;
+          cursor: pointer; }
         #index-header .index-nav__ul__li__a {
           color: black;
           font-size: 1.6em;
           transition: .5s all;
           font-family: 'Azeret Mono', monospace; }
+        #index-header .index-nav__ul__li__a:hover {
+          text-decoration: underline;
+          font-size: 2em;
+          color: gold; }
 
 /* STYLE - MAIN INDEX - */
 #index-main {
@@ -146,7 +153,7 @@ html {
 
 /* CARRUSEL STYLE */
 .altoCustom {
-  height: 40vw;
+  height: 45vw;
   overflow: hidden; }
 
 .carousel div img {
@@ -195,11 +202,6 @@ html {
     color: black; } }
 
 /* TRANSICIONES, TRANSFORMACIONES */
-#index-header .index-nav__ul__li a:hover {
-  text-decoration: underline;
-  font-size: 2em;
-  color: gold; }
-
 .lista-horizontal__row div:hover {
   transform: scale(1.5, 1.5);
   color: black;

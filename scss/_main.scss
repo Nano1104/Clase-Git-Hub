@@ -58,11 +58,20 @@
                 margin: 15px 25px;
                 display: inline-block;
                 text-align: center;
+                i {
+                    font-size: $text-normal;
+                    cursor: pointer;
+                }
                 &__a {
                     color: black;
                     font-size: $text-normal+.1em;
                     transition: .5s all;
                     font-family: 'Azeret Mono', monospace;
+                }
+                &__a:hover {
+                    text-decoration: underline;
+                    font-size: 2em;
+                    color: gold;
                 }
             }
         }
@@ -124,7 +133,7 @@
 /* CARRUSEL STYLE */
 
 .altoCustom {
-    height: 40vw;
+    height: 45vw;
     overflow: hidden;
 }
 .carousel div img {
@@ -181,18 +190,6 @@
 
 /* ANIMACIONES */
 
-// @keyframes index-circle {
-//     from {
-//         transform: rotate(0deg);
-//         width: 60px;
-//         height: 60px;
-//     }
-//     to {
-//         transform: rotate(360deg);
-//         width: 0px;
-//         height: 0px;
-//     }
-// }
 
 @keyframes firma {
     0% {color: blue;}
@@ -204,19 +201,7 @@
 
 /* TRANSICIONES, TRANSFORMACIONES */
 
-#index-header {
-    .index-nav {
-        &__ul {
-            &__li {
-                & a:hover {
-                    text-decoration: underline;
-                    font-size: 2em;
-                    color: gold;
-                }
-            }
-        }
-    }
-}
+
 .lista-horizontal__row div:hover {
     transform: scale(1.5, 1.5);
     color: black;
