@@ -25,10 +25,17 @@
                 &__li {
                     margin: 0px 20px;
                     &__a {
-                        color: orange;
-                        font-size: $text-normal;
-                        font-family: calibri;
+                        color: #FFD700;
+                        font-size: $text-normal+.6em;
                         transition: .3s all;
+                        font-family: monospace;
+                        font-weight: 500;
+                    }
+                    &__a:hover {
+                        font-size: $text-normal+1.2em;
+                        color: orange;
+                        font-weight: bold;
+                        text-shadow: 0px 0px 10px black;
                     }
                 }
             }
@@ -43,26 +50,82 @@
     display: flex;
     justify-content: center;
     margin: 50px auto;
-    .main-contact__section {
-        border: $default-border;
-        background-color: #8A7F77;
-        width: 70%;
+    .contact-section {
+        background-color: khaki;
+        width: 50%;
         padding: 20px;
+        box-shadow: 0px 0px 10px black;
+        &__title {
+            font-family: 'Anton', sans-serif;
+            font-size: $text-medium;
+        }
         &__form {
-            &__names {
+            &__datos {
                 display: flex;
-                justify-content: space-between; 
-            }
-            &__consultation {
-                display: flex;
-                justify-content: space-evenly;
-                margin-top: 30px;
-                &__left {
+                justify-content: space-around; 
+                flex-wrap: wrap;
+                input {
+                    font-size: $text-normal;
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    padding: 5px;
+                }
+                &__names {
                     display: flex;
                     justify-content: space-between;
-                    width: 410px;
-                    &__select {
-                        height: 30px;
+                    width: 100%;
+                }
+                &__select {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    &__right {
+                        label {
+                            font-family: 'Quicksand', sans-serif;
+                            font-size: $text-normal;    
+                        }
+                        select {
+                            border: $normal-border;
+                            padding: 3px;
+                            border-radius: 10px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+
+
+
+            &__consultation {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                textarea {
+                    width: 50%;
+                    resize: none;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: $text-normal;   
+                }
+                &__buttons {
+                    text-align: center;
+                    width: 90%;
+                    input {
+                        border-radius: 15px;
+                        cursor: pointer;
+                        border: none;
+                        box-shadow: 0px 0px 3px black;
+                        margin: 3px;
+                    }
+                    &__send {
+                        width: 70%;
+                        padding: 12px;
+                        background-image: radial-gradient(circle 350px, lightgray, rgb(58, 54, 54));
+                    }
+                    &__delete {
+                       padding: 12px 5px;
+                       background-image: radial-gradient(circle 25px, lightcoral, crimson);
                     }
                 }
             }
@@ -72,44 +135,10 @@
 
 /* FOOTER STYLE */
 
-.contact-footer__nav {
-    &__ul {
-        display: flex;
-        &__li {
-            margin: 0px 25px;
-            & a {
-                font-family: sans-serif;
-                font-size: 2em;
-            }
-            &__a1 {
-                color: tomato;
-            }
-            &__a2 {
-                color: cyan;
-            }
-        }
-    }
-}
 
 
-/* TRANSICIONES */
 
-#contact-header {
-    .container-nav-contact {
-        &__nav {
-            &__ul {
-                &__li {
-                    &__a:hover {
-                        font-size: $text-normal + .5em;
-                        font-weight: bold;
-                        color: gold;
-                        text-shadow: 0px 0px 10px black;
-                    }
-                }
-            }
-        }
-    }
-}
+
 
 
 
