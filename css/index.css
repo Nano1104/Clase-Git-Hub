@@ -454,6 +454,22 @@ main div div {
     width: 15vh;
     height: 15vh; }
 
+/* ANIMACIONES */
+.animate__fadeInDownBig {
+  animation-duration: 1.5s; }
+
+.animate__backInRight {
+  animation-duration: 2s; }
+
+.animate__bounceInUp {
+  animation-duration: 2s; }
+
+.animate__fadeInRightBig {
+  animation-duration: 3s; }
+
+.animate__fadeInRightBig {
+  animation-duration: 5s; }
+
 /* RESPONSIVE */
 @media screen and (max-width: 1140px) {
   .nosotros-title {
@@ -661,6 +677,28 @@ main div div {
     grid-column: 5/9;
     grid-row: 7/10; }
 
+/* ANIMACIONES */
+.animate__fadeInDownBig {
+  animation-duration: 1.5s; }
+
+.animate__backInRight {
+  animation-duration: 2s; }
+
+.animate__fadeInTopLeft {
+  animation-duration: 2s; }
+
+.animate__fadeInTopRight {
+  animation-duration: 3s; }
+
+.animate__fadeInBottomLeft {
+  animation-duration: 4s; }
+
+.animate__fadeInTopRight {
+  animation-duration: 5s; }
+
+.animate__fadeInBottomRight {
+  animation-duration: 6s; }
+
 /* STYLE - PAGE NEWS - */
 /* STYLE - NAV - */
 #news-header {
@@ -721,6 +759,16 @@ main div div {
 .row div div {
   padding: 10px;
   background-color: #525252; }
+
+/* ANIMACIONES */
+.animate__fadeInDownBig {
+  animation-duration: 1.5s; }
+
+#main-contact .animate__backInRight {
+  animation-duration: 1.5s; }
+
+.animate__bounceInUp {
+  animation-duration: 2s; }
 
 /* STYLE - CONTACT PAGE - */
 /* STYLE - NAV - */
@@ -822,7 +870,13 @@ main div div {
           padding: 12px 5px;
           background-image: radial-gradient(circle 25px, lightcoral, crimson); }
 
-/* FOOTER STYLE */
+/* ANIMACIONES */
+.animate__fadeInDownBig {
+  animation-duration: 1.5s; }
+
+.animate__backInRight {
+  animation-duration: 2s; }
+
 /* PAGE ANILLOS SYTLE */
 .grid-container-anillos {
   display: grid;

@@ -150,6 +150,26 @@ main {
     }
 }
 
+
+/* ANIMACIONES */
+
+.animate__fadeInDownBig {
+    animation-duration: 1.5s;
+}
+.animate__backInRight {
+    animation-duration: 2s;
+}
+.animate__bounceInUp {
+    animation-duration: 2s;
+}
+.animate__fadeInRightBig {
+    animation-duration: 3s;
+}
+.animate__fadeInRightBig {
+    animation-duration: 5s;
+}
+
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 1140px) {
