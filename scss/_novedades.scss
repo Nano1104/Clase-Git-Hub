@@ -84,3 +84,57 @@
 .animate__bounceInUp {
     animation-duration: 2s;
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 880px) {
+
+    #news-header {
+        .logo {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+
+    #news-header {
+        .news-nav {
+            &__nav {
+                &__ul {
+                    &__li {
+                        &__a {
+                            font-size: $text-normal;
+                        }
+                        &__a:hover {
+                            font-size: $text-normal - .1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #news-header {
+        .news-nav {
+            &__nav {
+                &__ul {
+                    &__li {
+                        &__a {
+                            font-size: $text-normal - .5em;
+                        }
+                        &__a:hover {
+                            font-size: $text-normal - .2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

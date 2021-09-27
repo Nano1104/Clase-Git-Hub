@@ -376,7 +376,7 @@ html {
       margin: 10px; }
   #nosotros-header .nosotros-title {
     font-size: 3.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: khaki;
     text-shadow: 5px 5px 10px black;
     text-align: center;
@@ -638,7 +638,7 @@ main div div {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 10px black;
-    border: 4px inset black; }
+    border: 5px inset black; }
   #grid-container-products div a {
     font-family: 'Oswald', sans-serif;
     font-size: 2.5em;
@@ -657,7 +657,7 @@ main div div {
   #grid-container-products .grid-container-products__img2 {
     background-image: url(../imagenes/pulsera4.jpeg);
     background-size: cover;
-    grid-column: 6/9;
+    grid-column: 6/10;
     grid-row: 1/5; }
   #grid-container-products .grid-container-products__img3 {
     background-image: url(../imagenes/aro3.jpeg);
@@ -698,6 +698,139 @@ main div div {
 
 .animate__fadeInBottomRight {
   animation-duration: 6s; }
+
+/* RESPONSIVE */
+@media screen and (max-width: 1040px) {
+  .grid-container-products__img3 {
+    grid-column: 2/6 !important; }
+  .grid-container-products__img5 {
+    grid-column: 6/10 !important; } }
+
+@media screen and (max-width: 880px) {
+  .grid-container-products__img1 {
+    grid-column: 1/6 !important; } }
+
+@media screen and (max-width: 870px) {
+  .grid-container-products__img2 {
+    grid-column: 6/11 !important; } }
+
+@media screen and (max-width: 810px) {
+  .grid-container-products__img3 {
+    grid-column: 1/6 !important; } }
+
+@media screen and (max-width: 740px) {
+  /*aqui hay que empezar a modificar el nav*/
+  #products-header .nav__nav__ul__li__a {
+    font-size: 1.7em; }
+  #products-header .logo {
+    width: 5vh;
+    height: 5vh; } }
+
+@media screen and (max-width: 700px) {
+  .grid-container-products__img1 {
+    grid-column: 1/7 !important; }
+  .grid-container-products__img2 {
+    grid-column: 7/11 !important;
+    grid-row: 1/4 !important; }
+  .grid-container-products__img4 {
+    grid-column: 7/11 !important;
+    grid-row: 4/7 !important; } }
+
+@media screen and (max-width: 655px) {
+  /* proxima modificacion del nav */
+  #products-header .nav__nav__ul__li__a {
+    font-size: 1.5em; }
+  #products-header .nav__nav__ul__li__a:hover {
+    font-size: 2.1em; }
+  #products-header .logo {
+    width: 5vh;
+    height: 5vh; }
+  .grid-container-products__img3 {
+    grid-column: 1/7 !important; }
+  .grid-container-products__img5 {
+    grid-column: 7/11 !important; } }
+
+@media screen and (max-width: 615px) {
+  #products-header .nav__nav__ul__li__a {
+    font-size: 1em; }
+  #products-header .nav__nav__ul__li__a:hover {
+    font-size: 1.5em; }
+  #products-header .logo {
+    width: 5vh;
+    height: 5vh; }
+  .grid-container-products__img1 {
+    grid-column: 1/6 !important;
+    grid-row: 1/4 !important; }
+  .grid-container-products__img2 {
+    grid-column: 6/11 !important;
+    grid-row: 1/4 !important; }
+  .grid-container-products__img3 {
+    grid-column: 1/6 !important;
+    grid-row: 4/7 !important; }
+  .grid-container-products__img4 {
+    grid-column: 6/11 !important;
+    grid-row: 4/7 !important; }
+  .grid-container-products__img5 {
+    grid-column: 3/9 !important;
+    grid-row: 7/10 !important; } }
+
+@media screen and (max-width: 525px) {
+  #products-header .nav__nav__ul__li__a {
+    font-size: .75em; }
+  #products-header .nav__nav__ul__li__a:hover {
+    font-size: 1.5em; }
+  #products-header .logo {
+    width: 5vh;
+    height: 5vh; } }
+
+@media screen and (max-width: 515px) {
+  .grid-container-products__img1 {
+    grid-column: 1/6 !important;
+    grid-row: 1/3 !important; }
+  .grid-container-products__img2 {
+    background-position: center;
+    grid-column: 6/11 !important;
+    grid-row: 1/3 !important; }
+  .grid-container-products__img3 {
+    grid-column: 1/6 !important;
+    grid-row: 3/6 !important; }
+  .grid-container-products__img4 {
+    grid-column: 6/11 !important;
+    grid-row: 3/6 !important; }
+  .grid-container-products__img5 {
+    grid-column: 3/9 !important;
+    grid-row: 6/9 !important; } }
+
+@media screen and (max-width: 485px) {
+  #products-header .logo {
+    width: 3vh;
+    height: 3vh; } }
+
+@media screen and (max-width: 470px) {
+  #products-header .logo {
+    width: 4vh;
+    height: 3vh; }
+  .grid-container-products__img3 {
+    background-position: center;
+    grid-column: 1/6 !important;
+    grid-row: 3/5 !important; } }
+
+@media screen and (max-width: 460px) {
+  #products-header .nav__nav__ul__li__a {
+    font-size: 0.5em; }
+  #products-header .nav__nav__ul__li__a:hover {
+    font-size: 1.5em; }
+  #products-header .logo {
+    width: 2vh;
+    height: 2vh; } }
+
+@media screen and (max-width: 370px) {
+  #products-header .nav__nav__ul__li__a {
+    font-size: .5em; }
+  #products-header .nav__nav__ul__li__a:hover {
+    font-size: .5em; }
+  #products-header .logo {
+    display: none; } }
 
 /* STYLE - PAGE NEWS - */
 /* STYLE - NAV - */
@@ -770,6 +903,23 @@ main div div {
 .animate__bounceInUp {
   animation-duration: 2s; }
 
+/* RESPONSIVE */
+@media screen and (max-width: 880px) {
+  #news-header .logo {
+    display: none; } }
+
+@media screen and (max-width: 760px) {
+  #news-header .news-nav__nav__ul__li__a {
+    font-size: 1.5em; }
+  #news-header .news-nav__nav__ul__li__a:hover {
+    font-size: 1.4em; } }
+
+@media screen and (max-width: 600px) {
+  #news-header .news-nav__nav__ul__li__a {
+    font-size: 1em; }
+  #news-header .news-nav__nav__ul__li__a:hover {
+    font-size: 1.3em; } }
+
 /* STYLE - CONTACT PAGE - */
 /* STYLE - NAV - */
 #contact-header {
@@ -811,7 +961,7 @@ main div div {
   margin: 50px auto; }
   #main-contact .contact-section {
     background-color: khaki;
-    width: 50%;
+    width: 50vw;
     padding: 20px;
     box-shadow: 0px 0px 10px black; }
     #main-contact .contact-section__title {
@@ -876,6 +1026,25 @@ main div div {
 
 .animate__backInRight {
   animation-duration: 2s; }
+
+/* RESPONSIVE */
+@media screen and (max-width: 910px) {
+  #main-contact .contact-section__form__names {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 760px) {
+  .container-nav-contact .logo {
+    display: none !important; } }
+
+@media screen and (max-width: 740px) {
+  #main-contact .contact-section {
+    width: 70vh; } }
+
+@media screen and (max-width: 470px) {
+  #main-contact .contact-section {
+    width: 70vh;
+    margin-left: 250px; } }
 
 /* PAGE ANILLOS SYTLE */
 .grid-container-anillos {
