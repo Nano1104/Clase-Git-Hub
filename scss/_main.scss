@@ -159,18 +159,24 @@
                 list-style: none;
                 display: inline-block;
                 margin: 0px 30px;
-                & a {
-                    font-size: 1.5rem;
-                    transition: .5s all;
+                a {
+                    font-size: $text-medium - 1em;
                 }
                 &__a1 {
-                    color: tomato;
+                    color: orangered;
+                }
+                &__a1:hover {
+                    color: rgb(248, 91, 34);
                 }
                 &__a2 {
-                    color: cyan;
+                    
                 }
                 &__a3 {
-                    color: white;
+                    font-family: monospace;
+                    color: khaki;
+                }
+                &__a3:hover {
+                    color: orange;
                 }
             }
         }
@@ -208,28 +214,7 @@
     background-color: white;
     margin: 50px;
 }
-#index-footer {
-    .nav-footer {
-        &__ul {
-            &__li {
-                &__a1:hover {
-                    color: tomato;
-                    font-size: 2em;
-                    font-weight: bold;
-                }
-                &__a2:hover {
-                    color: cyan;
-                    font-size: 2em;
-                    font-weight: bold;
-                }
-                &__a3:hover {
-                    font-size: 2em;
-                    font-weight: bold;
-                }
-            }
-        }
-    }
-}
+
 
 /* RESPONSIVE */
 
