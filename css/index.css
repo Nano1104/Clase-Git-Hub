@@ -60,6 +60,8 @@ html {
     align-items: center;
     justify-content: space-between;
     height: 150px; }
+    #index-header .submenu .logo {
+      box-shadow: 0px 0px 10px black; }
     #index-header .submenu__firma {
       font-size: 2rem;
       display: inline-block;
@@ -68,7 +70,8 @@ html {
       width: 10%;
       animation: firma .8s linear infinite; }
     #index-header .submenu__firma p {
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      display: none; }
   #index-header .title-style {
     font-size: 6em;
     font-family: monospace;
@@ -638,7 +641,8 @@ main div div {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 10px black;
-    border: 5px inset black; }
+    border: 3px inset black;
+    border-radius: 10px; }
   #grid-container-products div a {
     font-family: 'Oswald', sans-serif;
     font-size: 2.5em;
