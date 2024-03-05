@@ -4,7 +4,7 @@
 /* STYLE - NAV - */
 
 #nosotros-header {
-    height: 70vh;
+    height: 50vh;
     .container-nav-nosotros {
         display: flex;
         justify-content: space-between;
@@ -17,16 +17,16 @@
                 align-items: center;
                 height: 48px;
                 &__li {
-                    margin: 0px 20px;
+                    margin: 0px 35px;
                     &__a {
-                        color: #FFD700;
+                        color: $color-firts;
                         font-size: $text-normal+.6em;
                         transition: .3s all;
                         font-family: monospace;
                         font-weight: 500;
                     }
                     &__a:hover {
-                        font-size: $text-normal+1.2em;
+                        font-size: $text-normal+1em;
                         color: orange;
                         font-weight: bold;
                         text-shadow: 0px 0px 10px black;
@@ -39,10 +39,10 @@
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
-            width: 10vh;
-            height: 10vh;
-            height: 100px;
-            margin: 10px;
+            width: 65px;
+            height: 65px;
+            margin: 18px;
+            border-radius: 50%;
         }
     }
     .nosotros-title {
@@ -51,59 +51,73 @@
         color: khaki;
         text-shadow: 5px 5px 10px black;
         text-align: center;
-        margin-top: 30vh;
+        margin-top: 20vh;
     }
 }
 
-
+hr {
+    width: 50%;
+}
 
 /* STYLE - MAIN NOSOTROS - */
 
+#main-nosotros hr {
+    width: 50%;
+    margin-left: 50%;
+}
 #paragraph-nosotros {
     font-size: $text-normal + 2em; 
     font-family: monospace;
-    color: #FFD700;
+    color: $color-firts;
     margin: 50px 20px;
     text-align: center;
 }
 .grid-container-nosotros {
     display: grid;
+    margin-top: 200px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(5, 150px);
     &__img1 {
+        border: 1px solid #333;
         background-image: url(../imagenes/anillo2.jpeg);
         background-size: cover;
+        background-position: center;
         grid-column: 1/4;
         grid-row: 1/4;
-        box-shadow: 5px 5px 10px black;
-        transition: .5s all;
+        border-radius: 15px;
+        transition: .2s all;
     }
     &__img1:hover {
-        box-shadow: 0px 0px 10px white;
+        box-shadow: 0px 0px 10px black;
+        border: none;
     }
     &__img2 {
+        border: 1px solid #333;
         background-image: url(../imagenes/cadena2.jpeg);
         background-size: cover;
         background-position: bottom;
         grid-column: 4/8;
         grid-row: 2/5;
-        box-shadow: 5px 5px 10px black;
-        transition: .5s all;
+        border-radius: 15px;
+        transition: .2s all;
     }
     &__img2:hover {
-        box-shadow: 0px 0px 10px white;
+        box-shadow: 0px 0px 10px black;
+        border: none;
     }
     &__img3 {
+        border: 1px solid #333;
         background-image: url(../imagenes/aro2.jpeg);
         background-size: cover;
         background-position: bottom;
         grid-column: 8/11;
         grid-row: 1/4;
-        box-shadow: 5px 5px 10px black;
-        transition: .5s all;
+        border-radius: 15px;
+        transition: .2s all;
     }
     &__img3:hover {
-        box-shadow: 0px 0px 10px white;
+        box-shadow: 0px 0px 10px black;
+        border: none;
     }
 }
 
@@ -131,11 +145,13 @@ main {
         &__a {
             font-family: calibri;
             font-size: $text-normal + .5em;
-            color: gold;
+            color: $color-firts;
             transition: .5s all;
             letter-spacing: 5px;
         }
         &__a:hover {
+            text-decoration: underline;
+            text-underline-offset: 10px;
             color: #ffa600;
         }
     }

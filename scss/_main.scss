@@ -18,6 +18,7 @@
         height: 150px;
         .logo {
             box-shadow: 0px 0px 10px black;
+            border-radius: 50%;
         }
         &__firma {
             font-size: 2rem;
@@ -35,7 +36,7 @@
     .title-style {
         font-size: $text-big;
         font-family: monospace;
-        color: gold;
+        color: #FFD95A;
         text-shadow: 5px 5px 10px black;
         text-align: center;
     }
@@ -52,7 +53,7 @@
     .index-nav {
         display: flex;
         align-items: center;
-        margin-top: 330px;
+        margin-top: 425px;
         background-color: gray;
         opacity: .7;
         &__ul {
@@ -73,9 +74,10 @@
                     font-family: 'Azeret Mono', monospace;
                 }
                 &__a:hover {
+                    transition: .3s all;
                     text-decoration: underline;
-                    font-size: 2em;
-                    color: gold;
+                    font-size: 1.7em;
+                    color: $color-firts;
                 }
             }
         }
@@ -94,7 +96,7 @@
     .index-paragraph {
         font-size: 2.7rem;
         font-family: monospace;
-        color: #FFD700;
+        color: $color-firts;
         margin-bottom: 40px;
         margin-right: 20px;
         margin-left: 15px;
@@ -140,6 +142,7 @@
     height: 45vw;
     overflow: hidden;
 }
+
 .carousel div img {
     box-shadow: 0px 0px 10px black;
 }
@@ -154,10 +157,14 @@
             margin-top: 30px;
             margin-bottom: 100px;
             text-align: center;
-            color: #FFD700;
+            color: $color-firts;
         }
     }
+    hr {
+        color: white;
+    }
     .nav-footer {
+        margin-top: 75px;
         &__ul {
             &__li {
                 list-style: none;
@@ -167,20 +174,26 @@
                     font-size: $text-medium - 1em;
                 }
                 &__a1 {
-                    color: orangered;
+                    color: #FFD95A;
                 }
                 &__a1:hover {
-                    color: rgb(248, 91, 34);
+                    transition: .2s all;
+                    color: #C07F00;
                 }
                 &__a2 {
-                    
+                    color: #FFD95A;
+                }
+                &__a2:hover {
+                    transition: .2s all;
+                    color: #C07F00;
                 }
                 &__a3 {
-                    font-family: monospace;
-                    color: khaki;
+                    font-family: Arial;
+                    color: #FFD95A;
                 }
                 &__a3:hover {
-                    color: orange;
+                    transition: .2s all;
+                    color: #C07F00;
                 }
             }
         }
@@ -438,27 +451,6 @@
 
 
     
-//     .index-paragraph__p {
-//         margin-top: 10px;
-//     }
-//     .nav-footer__ul {
-//         display: flex;
-//         flex-wrap: wrap;
-//     }
-//     .nav-footer {
-//         &__ul {
-//             display: flex;
-//             justify-content: center;
-//             &__li {
-//                 display: inline-block;
-//                 list-style: none;
-//                 display: inline-block;
-//                 &__a {
-//                 }
-//             }
-//         }
-//     }
-// }
 
 
 

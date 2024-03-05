@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Nano1104/Clase-Git-Hub#readme",
   "devDependencies": {
-    "node-sass": "^6.0.1",
+    "node-sass": "^9.0.0",
     "nodemon": "^2.0.12"
   }
 }

@@ -25,21 +25,27 @@
                 &__li {
                     margin: 0px 20px;
                     &__a {
-                        color: #FFD700;
+                        color: $color-firts;
                         font-size: $text-normal+.6em;
                         transition: .3s all;
                         font-family: monospace;
                         font-weight: 500;
                     }
                     &__a:hover {
-                        font-size: $text-normal+1.2em;
-                        color: orange;
+                        font-size: $text-normal+1em;
+                        color: #C07F00;
                         font-weight: bold;
                         text-shadow: 0px 0px 10px black;
                     }
                 }
             }
         }
+    }
+
+    .logo {
+        border-radius: 50%;
+        height: 65px;
+        width: 65px;
     }
 }
 
@@ -49,7 +55,7 @@
 #main-contact {
     display: flex;
     justify-content: center;
-    margin: 50px auto;
+    margin: 200px auto;
     .contact-section {
         background-color: khaki;
         width: 50vw;
@@ -107,6 +113,7 @@
                     resize: none;
                     font-family: 'Quicksand', sans-serif;
                     font-size: $text-normal;   
+                    text-align: center;
                 }
                 &__buttons {
                     text-align: center;
