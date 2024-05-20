@@ -25,7 +25,7 @@
                 &__li {
                     margin: 0px 20px;
                     &__a {
-                        color: $color-firts;
+                        color: $yellow;
                         font-size: $text-normal+.6em;
                         transition: .3s all;
                         font-family: monospace;
@@ -93,7 +93,7 @@
                             font-size: $text-normal;    
                         }
                         select {
-                            border: $normal-border;
+                            border: $border;
                             padding: 3px;
                             border-radius: 10px;
                             margin-left: 5px;

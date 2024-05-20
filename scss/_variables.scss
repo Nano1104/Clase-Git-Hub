@@ -1,24 +1,24 @@
-
-/* COLORES */
-
-$color-firts: #FFD95A;
-$color-second: orange;
+/* COLORS */
+$yellow: #FFD95A;
+$orange: rgb(168, 126, 47);
 $color-third: black;
-$color-fourth: gray;
 $color-error: red;
+$gray: #EEEEEE;
 
 /* BORDER */
-
-$normal-border: 1px solid black; 
+$border: 1px solid black; 
 $outline: 2px solid black;
 
-/* FUENTES */
-
+/* SIZE */
 $text-big: 10em; 
 $text-medium: 3em;
 $text-normal: 1.5em;
 
-/* ESPACIADOS */
+/* FONTS */
+$montserrat: "Montserrat", sans-serif;
+$playfair-display: "Playfair Display", serif;
 
+/* SPACING */
 $spacing-big: 20px;
 $spacing-normal: 10px;
+

@@ -19,7 +19,7 @@
                 &__li {
                     margin: 0px 35px;
                     &__a {
-                        color: $color-firts;
+                        color: $yellow;
                         font-size: $text-normal+.6em;
                         transition: .3s all;
                         font-family: monospace;
@@ -68,7 +68,7 @@ hr {
 #paragraph-nosotros {
     font-size: $text-normal + 2em; 
     font-family: monospace;
-    color: $color-firts;
+    color: $yellow;
     margin: 50px 20px;
     text-align: center;
 }
@@ -145,7 +145,7 @@ main {
         &__a {
             font-family: calibri;
             font-size: $text-normal + .5em;
-            color: $color-firts;
+            color: $yellow;
             transition: .5s all;
             letter-spacing: 5px;
         }
