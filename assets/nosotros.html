@@ -10,66 +10,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Architects+Daughter&family=Iceland&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header id="nosotros-header">
-        <div class="container-nav-nosotros">
-            <nav class="container-nav-nosotros__nav animate__animated animate__fadeInDownBig">
-                <ul class="container-nav-nosotros__nav__ul">
-                    <li class="container-nav-nosotros__nav__ul__li">
-                        <a href="../index.html" class="container-nav-nosotros__nav__ul__li__a">Inicio</a>
-                    </li>
-                    <li class="container-nav-nosotros__nav__ul__li">
-                        <a href="nosotros.html" class="container-nav-nosotros__nav__ul__li__a">Nosotros</a>
-                    </li>
-                    <li class="container-nav-nosotros__nav__ul__li">
-                        <a href="productos.html" target="_BLANK" class="container-nav-nosotros__nav__ul__li__a">Productos</a>
-                    </li>
-                    <li class="container-nav-nosotros__nav__ul__li">
-                        <a href="novedades.html" target="_BLANK" class="container-nav-nosotros__nav__ul__li__a">Novedades</a>
-                    </li>
-                    <li class="container-nav-nosotros__nav__ul__li">
-                        <a href="contacto.html" target="_BLANK" class="container-nav-nosotros__nav__ul__li__a">Contactanos</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="container-nav-nosotros__logo animate__animated animate__backInRight">
-            </div>
-        </div>
-        <div class="nosotros-title">
-            <h1 class="nosotros-title__h1 animate__animated animate__bounceInUp">
-                ¿Quiénes Somos?
-            </h1>
-        </div>
-    </header>
-    
-    <hr>
+    <div class="bar">
+        <div class="bar-icon"></div>
+    </div>
+    <h1 class="nosotros-title">Nosotros</h1>
 
-    <main id="main-nosotros">
+    <main class="main-nosotros">
+        <hr id="bar-1">
         <p id="paragraph-nosotros">
             Artemis en un emprendimiento que cuenta con más de 10 años de trayectoria. 
             Ofrecemos a nuestros clientes artículos en acero quirúrgico de diseño y calidad 
         </p>
-        <hr>
+        <hr id="bar-2">
+
+
         <div class="grid-container-nosotros">
-            <div class="grid-container-nosotros__img1">
-            </div>
-            <div class="grid-container-nosotros__img2">
-            </div>
-            <div class="grid-container-nosotros__img3">
-            </div>
+            <div class="grid-container-nosotros__img1" data-aos="fade-up"></div>
+            <div class="grid-container-nosotros__img2" data-aos="fade-up"></div>
+            <div class="grid-container-nosotros__img3" data-aos="fade-up"></div>
         </div>
     </main>
 
-    <footer>
-        <div class="footer-nosotros">
-            <div class="footer-nosotros__container">
-                <a href="productos.html" class="footer-nosotros__container__a animate__animated animate__fadeInRightBig" target="_BLANK">Pulsa aquí para ver nuestros productos</a>
-            </div>
-            <div class="footer-nosotros__logo">
-            </div>
-        </div>
-    </footer>
+    <div id="bar-footer">
+        <a href="../index.html" class="btn-back">INICIO</a>
+    </div>
+
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
 

@@ -28,6 +28,7 @@
                     font-family: $montserrat;
                     cursor: pointer;
                     position: relative;
+                    transition: .3s all;
                 }
                 &__a::after {
                     content: '';
@@ -63,18 +64,6 @@
 
 
 /************************** MAIN **************************/
-@keyframes show {
-    0% {
-        opacity: 0;
-        margin-right: -1450px;
-    }
-
-    100% {
-        opacity: 1;
-        margin-right: 0;
-    }
-}
-
 #index-main {
     display: flex;
     justify-content: flex-end;

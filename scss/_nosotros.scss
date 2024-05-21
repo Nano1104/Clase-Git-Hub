@@ -1,90 +1,60 @@
 
-/* STYLE - NOSOTROS PAGE - */
+.nosotros-title {
+    font-size: 10rem;
+    font-family: $playfair-display;
+    color: #FFD95A;
+    text-shadow: 5px 5px 10px black;
+    text-align: center;
+    margin: 50px 0px;
 
-/* STYLE - NAV - */
+    animation: fadeIn;
+    animation-duration: 3s;
+}
 
-#nosotros-header {
-    height: 50vh;
-    .container-nav-nosotros {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 80px;
-        &__nav {
-            &__ul {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                height: 48px;
-                &__li {
-                    margin: 0px 35px;
-                    &__a {
-                        color: $yellow;
-                        font-size: $text-normal+.6em;
-                        transition: .3s all;
-                        font-family: monospace;
-                        font-weight: 500;
-                    }
-                    &__a:hover {
-                        font-size: $text-normal+1em;
-                        color: orange;
-                        font-weight: bold;
-                        text-shadow: 0px 0px 10px black;
-                    }
-                }
-            }
-        }
-        &__logo {
-            background-image: url("../imagenes/logo.jpeg");
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 65px;
-            height: 65px;
-            margin: 18px;
-            border-radius: 50%;
-        }
+.main-nosotros {
+    margin-top: 100px;
+    hr {
+        width: 50%;
     }
-    .nosotros-title {
-        font-size: $text-normal + 2em;
-        font-family: 'Oswald', sans-serif;
-        color: khaki;
-        text-shadow: 5px 5px 10px black;
-        text-align: center;
-        margin-top: 20vh;
+    #bar-1 {
+        margin-left: 0%;
+
+        animation: slideInLeft;
+        animation-duration: 2s;
+    }
+    #bar-2 {
+        margin-left: 50%;
+
+        animation: slideInRight;
+        animation-duration: 2s;
     }
 }
 
-hr {
-    width: 50%;
-}
-
-/* STYLE - MAIN NOSOTROS - */
-
-#main-nosotros hr {
-    width: 50%;
-    margin-left: 50%;
-}
 #paragraph-nosotros {
-    font-size: $text-normal + 2em; 
-    font-family: monospace;
-    color: $yellow;
+    font-size: 2.5rem; 
+    font-family: $montserrat;
+    color: $gray;
     margin: 50px 20px;
     text-align: center;
 }
+
 .grid-container-nosotros {
     display: grid;
-    margin-top: 200px;
+    margin-top: 380px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(5, 150px);
+    div {
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+    }
     &__img1 {
         border: 1px solid #333;
-        background-image: url(../imagenes/anillo2.jpeg);
+        background-image: url(../imagenes/anillo3.jpg);
         background-size: cover;
         background-position: center;
         grid-column: 1/4;
         grid-row: 1/4;
-        border-radius: 15px;
         transition: .2s all;
     }
     &__img1:hover {
@@ -93,12 +63,11 @@ hr {
     }
     &__img2 {
         border: 1px solid #333;
-        background-image: url(../imagenes/cadena2.jpeg);
+        background-image: url(../imagenes/collar3.jpeg);
         background-size: cover;
         background-position: bottom;
         grid-column: 4/8;
         grid-row: 2/5;
-        border-radius: 15px;
         transition: .2s all;
     }
     &__img2:hover {
@@ -107,12 +76,11 @@ hr {
     }
     &__img3 {
         border: 1px solid #333;
-        background-image: url(../imagenes/aro2.jpeg);
+        background-image: url(../imagenes/pulsera1.jpg);
         background-size: cover;
         background-position: bottom;
         grid-column: 8/11;
         grid-row: 1/4;
-        border-radius: 15px;
         transition: .2s all;
     }
     &__img3:hover {

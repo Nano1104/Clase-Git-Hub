@@ -1,139 +1,146 @@
-
-/* STYLE - PRODUCTS PAGE */
-
-/* STYLE - NAV - */
-
-#products-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .nav {
-        display: flex;
-        align-items: center;
-        height: 50px;
-        &__nav {
-            display: flex;
-            align-items: center;
-            padding: 30px 15px;
-            &__ul {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                height: 48px;
-                &__li {
-                    margin: 0px 35px;
-                    &__a {
-                        color: $yellow;
-                        font-size: $text-normal+.6em;
-                        transition: .3s all;
-                        font-family: monospace;
-                        font-weight: 500;
-                    }
-                    &__a:hover {
-                        font-size: $text-normal+1em;
-                        color: #C07F00;
-                        font-weight: bold;
-                        text-shadow: 0px 0px 10px black;
-                    }
-                }
-            }
-        }
-    }
-    .logo {
-        border-radius: 50%;
-        width: 65px;
-        height: 65px;
-    }
+/* STYLE - MAIN PRODUCTS - */
+body {
+    height: 100vh;
 }
 
+.bar {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* STYLE - MAIN PRODUCTS - */
+.bar-icon {
+    background-image: url("../imagenes/logo.jpeg");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+}
 
-#grid-container-products {
+.grid-container-products {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 100px);
-    gap: 30px;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 400px;
     margin-top: 100px;
+    gap: 30px;
+    justify-content: center;
+    &__a {
+        font-family: $playfair-display;
+        font-size: 2em;
+        color: black;
+        transition: .2s all;
+        position: relative;
+        font-weight: 700;
+    }
+    &__a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px; 
+        bottom: 0;
+        left: 0;
+        background-color: gray; 
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+    }
+    &__a:hover::after {
+        visibility: visible;
+        transform: scaleX(1);
+        background-color: black;
+    }
+    &__a:hover {
+        font-size: 2.8em;
+    }
     div {
         display: flex;
         justify-content: center;
         align-items: center;
         box-shadow: 0px 0px 10px black;
-        border-radius: 10px;
-    }
-    div a {
-        font-family: 'Oswald', sans-serif;
-        font-size: $text-medium - .5em;
-        color: black;
-        transition: .2s all;
-    }
-    div a:hover {
-        font-size: 3.5em;
-        font-weight: bold;
-        color: black;
+        border-radius: 10px;        
     }
     .grid-container-products__img1 {
-        background-image: url(../imagenes/cadena2.jpeg);
-        background-size: cover;
+        background-image: url(../imagenes/collar2.jpg);
         background-position: bottom;
-        grid-column: 2/6;
-        grid-row: 2/6;
+        background-size: cover;
+
+        animation: fadeInTopLeft;
+        animation-duration: 2.5s; 
     }
     .grid-container-products__img2 {
-        background-image: url(../imagenes/pulsera4.jpeg);
-        background-size: cover;
-        grid-column: 6/10;
-        grid-row: 1/5;
+        background-image: url(../imagenes/pulsera4.jpg);
+        background-size: contain;
+        background-position: center;
+
+        animation: fadeInTopRight;
+        animation-duration: 2.5s; 
     }
     .grid-container-products__img3 {
-        background-image: url(../imagenes/aro3.jpeg);
+        background-image: url(../imagenes/aro6.jpg);
         background-size: cover;
-        grid-column: 2/5;
-        grid-row: 6/10;
+
+        animation: fadeInBottomLeft;
+        animation-duration: 2.5s; 
     }
     .grid-container-products__img4 {
-        background-image: url(../imagenes/anillo4.jpeg);
+        background-image: url(../imagenes/anillo4.jpg);
         background-size: cover;
         background-position: center;
-        grid-column: 6/10;
-        grid-row: 5/7;
-    }
-    .grid-container-products__img5 {
-        background-image: url(../imagenes/galleryfondo.png);
-        background-size: cover;
-        background-position: bottom;
-        grid-column: 5/9;
-        grid-row: 7/10;
+
+        animation: fadeInBottomRight;
+        animation-duration: 2.5s; 
     }
 }
 
-/* ANIMACIONES */
-
-.animate__fadeInDownBig {
-    animation-duration: 1.5s;
-}
-.animate__backInRight {
-    animation-duration: 2s;
-}
-
-.animate__fadeInTopLeft {
-    animation-duration: 2s;
-}
-.animate__fadeInTopRight {
-    animation-duration: 3s;
-}
-.animate__fadeInBottomLeft {
-    animation-duration: 4s;
-}
-.animate__fadeInTopRight {
-    animation-duration: 5s;
-}
-.animate__fadeInBottomRight {
-    animation-duration: 6s;
+#bar-footer {
+    margin-top: 200px;
+    background-color: black;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-/* RESPONSIVE */
+.btn-back {
+    color: $gray;
+    font-size: 2.8em;
+    font-family: $playfair-display;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 25px;
+    transition: .3s all;
+}
+.btn-back::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; 
+    bottom: 0;
+    left: 0;
+    background-color: gray; 
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out 0s;
+}
+.btn-back:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+    background-color: $yellow;
+}
+.btn-back:hover {
+    color: $yellow;
+}
+
+/**************************************************************** RESPONSIVE /****************************************************************/
 
 
 @media screen and (max-width: 1040px) {
