@@ -26,7 +26,6 @@ a {
   text-decoration: none; }
 
 body {
-  /* background-image: linear-gradient(to bottom, black, gray); */
   background-color: #777; }
 
 html {
@@ -634,7 +633,8 @@ body {
   height: 50px;
   border-radius: 50%;
   position: absolute;
-  top: 8px; }
+  top: 8px;
+  border: 1px solid #F3CA52; }
 
 .grid-container-products {
   display: grid;
@@ -1010,25 +1010,30 @@ hr {
     margin: 0px; }
   #main-contact .form {
     background-color: #EEEEEE;
-    width: 40vw;
-    height: 700px;
+    width: 35vw;
+    height: 600px;
     padding: 20px;
     box-shadow: 0px 0px 5px black;
     font-family: "Montserrat", sans-serif;
-    font-size: 1em; }
+    font-size: 1em;
+    animation: slideInUp;
+    animation-duration: 1s; }
     #main-contact .form__title {
       font-size: 3em;
       font-family: "Playfair Display", serif;
       color: black; }
     #main-contact .form__datos {
       display: flex;
-      justify-content: start; }
+      justify-content: space-between; }
       #main-contact .form__datos input {
         font-size: 1.5em;
         background: none;
-        border: 1px solid black;
+        border: none;
+        border-bottom: 1px solid #444;
         padding: 5px;
-        width: 80%; }
+        width: 87%;
+        margin: 10px 0px;
+        font-size: 1.2em; }
       #main-contact .form__datos__names {
         display: flex;
         flex-direction: column;
@@ -1037,36 +1042,54 @@ hr {
       #main-contact .form__datos__select {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         width: 45%; }
-        #main-contact .form__datos__select-right label {
-          font-size: 1.2em; }
-        #main-contact .form__datos__select-right select {
-          border: 1px solid black;
-          border-radius: 10px; }
+        #main-contact .form__datos__select-right {
+          margin: 10px 0px; }
+          #main-contact .form__datos__select-right label {
+            font-size: 1.2em; }
+          #main-contact .form__datos__select-right select {
+            margin-top: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 40%;
+            font-family: "Montserrat", sans-serif; }
     #main-contact .form__consult {
       display: flex;
       flex-direction: column;
       align-items: start; }
       #main-contact .form__consult textarea {
-        width: 75px;
-        height: 75px;
+        width: 100%;
+        height: 100px;
         resize: none;
-        font-size: 1.5em; }
+        font-size: 1.2em;
+        font-family: "Montserrat", sans-serif;
+        padding: 6px; }
       #main-contact .form__consult__btns {
-        width: 90%; }
+        width: 100%;
+        display: flex; }
         #main-contact .form__consult__btns input {
-          border-radius: 15px;
           cursor: pointer;
           border: none;
-          box-shadow: 0px 0px 3px black;
-          margin: 3px; }
+          margin-top: 10px;
+          font-family: "Montserrat", sans-serif; }
         #main-contact .form__consult__btns-send {
-          width: 70%;
+          width: 38%;
           padding: 12px;
-          background-image: radial-gradient(circle 350px, lightgray, #3a3636); }
+          background-color: #A9A9A9;
+          transition: .5s all; }
+        #main-contact .form__consult__btns-send:hover {
+          box-shadow: 0px 0px 2px #222;
+          background-color: #7F7F7F; }
         #main-contact .form__consult__btns-delete {
+          width: 10%;
+          margin-left: 10px;
           padding: 12px 5px;
-          background-image: radial-gradient(circle 25px, lightcoral, crimson); }
+          background-color: #F3CA52;
+          transition: .5s all; }
+        #main-contact .form__consult__btns-delete:hover {
+          box-shadow: 0px 0px 2px #222;
+          background-color: #E0B040; }
 
 /* ANIMACIONES */
 .animate__fadeInDownBig {
@@ -1096,173 +1119,186 @@ hr {
 
 /* PAGE ANILLOS SYTLE */
 .grid-container-anillos {
+  margin-top: 10px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 500px); }
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 500px 500px;
+  justify-items: center; }
   .grid-container-anillos__img1 {
-    background-image: url("../imagenes/anillo1.jpeg"); }
+    background-image: url("../imagenes/anillo2.jpg"); }
   .grid-container-anillos__img2 {
-    background-image: url("../imagenes/anillo2.jpeg"); }
+    background-image: url("../imagenes/anillo3.jpg"); }
   .grid-container-anillos__img3 {
-    background-image: url("../imagenes/anillo3.jpeg"); }
+    background-image: url("../imagenes/anillo4.jpg"); }
   .grid-container-anillos__img4 {
-    background-image: url("../imagenes/anillo4.jpeg"); }
+    background-image: url("../imagenes/anillo5.jpg"); }
   .grid-container-anillos__img5 {
-    background-image: url("../imagenes/anillo5.jpeg"); }
+    background-image: url("../imagenes/anillo6.jpg"); }
   .grid-container-anillos__img6 {
-    background-image: url("../imagenes/anillo6.jpeg"); }
+    background-image: url("../imagenes/anillo7.jpg"); }
   .grid-container-anillos div {
-    transform: scale(0.7, 0.7);
-    transition: 1s all;
-    background-position: center;
+    height: 420px;
+    width: 450px;
+    transition: .5s all;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(4px); }
+    filter: blur(2px);
+    border-radius: 25px; }
     .grid-container-anillos div p {
-      font-family: 'Oswald', sans-serif;
+      font-family: "Montserrat", sans-serif;
       display: none;
-      font-size: 3em;
+      font-size: 2.7em;
       position: absolute;
       bottom: 0;
-      margin: 10px;
+      margin: 15px;
       transition: .5s all; }
 
 /* TRANSICIONES */
 .grid-container-anillos div:hover {
-  transform: scale(1, 1);
+  transform: scale(1.1, 1.1);
   margin: 20px;
-  filter: none;
-  box-shadow: 0px 0px 20px black; }
+  filter: none; }
   .grid-container-anillos div:hover p {
     display: block; }
 
 /* PAGE AROS STYLE */
 .grid-container-aros {
+  margin-top: 10px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 500px); }
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 500px 500px;
+  justify-items: center; }
   .grid-container-aros__img1 {
-    background-image: url("../imagenes/aro1.jpeg");
+    background-image: url("../imagenes/aro2.jpg");
     background-position: bottom; }
   .grid-container-aros__img2 {
-    background-image: url("../imagenes/aro2.jpeg");
+    background-image: url("../imagenes/aro3.jpg");
     background-position: bottom; }
   .grid-container-aros__img3 {
-    background-image: url("../imagenes/aro3.jpeg");
+    background-image: url("../imagenes/aro4.jpg");
     background-position: bottom; }
   .grid-container-aros__img4 {
-    background-image: url("../imagenes/aro4.jpeg");
+    background-image: url("../imagenes/aro5.jpg");
     background-position: center; }
   .grid-container-aros__img5 {
-    background-image: url("../imagenes/aro5.jpeg");
+    background-image: url("../imagenes/aro6.jpg");
     background-position: bottom; }
   .grid-container-aros__img6 {
-    background-image: url("../imagenes/aro6.jpeg");
+    background-image: url("../imagenes/aro7.jpg");
     background-position: bottom; }
   .grid-container-aros div {
-    transform: scale(0.7, 0.7);
-    transition: 1s all;
+    height: 420px;
+    width: 450px;
+    transition: .5s all;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(4px); }
+    filter: blur(2px);
+    border-radius: 25px; }
     .grid-container-aros div p {
-      font-family: 'Oswald', sans-serif;
+      font-family: "Montserrat", sans-serif;
       display: none;
-      font-size: 3em;
+      font-size: 2.7em;
       position: absolute;
       bottom: 0;
-      margin: 10px;
+      margin: 15px;
       transition: .5s all; }
 
 /* TRANSICIONES */
 .grid-container-aros div:hover {
-  transform: scale(1, 1);
-  margin: 20px;
-  filter: none;
-  box-shadow: 0px 0px 20px black; }
+  transform: scale(1.08, 1.08);
+  margin: 10px;
+  filter: none; }
   .grid-container-aros div:hover p {
     display: block; }
 
 /* PAGE CADENAS STYLES */
 .grid-container-cadenas {
+  margin-top: 10px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 500px); }
-  .grid-container-cadenas__img1 {
-    background-image: url("../imagenes/cadena2.jpeg"); }
-  .grid-container-cadenas__img2 {
-    background-image: url("../imagenes/cadena3.jpeg"); }
-  .grid-container-cadenas__img3 {
-    background-image: url("../imagenes/cadena4.jpeg"); }
-  .grid-container-cadenas__img4 {
-    background-image: url("../imagenes/cadena5.jpeg"); }
-  .grid-container-cadenas__img5 {
-    background-image: url("../imagenes/cadena6.jpeg"); }
-  .grid-container-cadenas__img6 {
-    background-image: url("../imagenes/cadena2.jpeg"); }
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 500px 500px;
+  justify-items: center; }
   .grid-container-cadenas div {
-    transform: scale(0.75, 0.75);
-    transition: 1s all;
+    height: 420px;
+    width: 450px;
+    transition: .5s all;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(4px); }
+    filter: blur(2px);
+    border-radius: 25px; }
     .grid-container-cadenas div p {
-      font-family: 'Oswald', sans-serif;
+      font-family: "Montserrat", sans-serif;
       display: none;
-      font-size: 3em;
+      font-size: 2.7em;
       position: absolute;
       bottom: 0;
-      margin: 10px;
+      margin: 15px;
       transition: .5s all; }
+  .grid-container-cadenas__img1 {
+    background-image: url("../imagenes/collar2.jpg"); }
+  .grid-container-cadenas__img2 {
+    background-image: url("../imagenes/collar3.jpeg"); }
+  .grid-container-cadenas__img3 {
+    background-image: url("../imagenes/collar4.jpg"); }
+  .grid-container-cadenas__img4 {
+    background-image: url("../imagenes/collar5.jpg"); }
+  .grid-container-cadenas__img5 {
+    background-image: url("../imagenes/collar6.jpg"); }
+  .grid-container-cadenas__img6 {
+    background-image: url("../imagenes/collar6.jpg"); }
 
 /* TRANSICIONES */
 .grid-container-cadenas div:hover {
-  transform: scale(1, 1);
+  transform: scale(1.08, 1.08);
   margin: 20px;
-  filter: none;
-  box-shadow: 0px 0px 20px black; }
+  filter: none; }
   .grid-container-cadenas div:hover p {
     display: block; }
 
 /* PAGE PULSERAS STYLE */
 .grid-container-pulseras {
+  margin-top: 10px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 500px); }
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 500px 500px;
+  justify-items: center; }
   .grid-container-pulseras div {
-    height: 80vh;
+    height: 420px;
+    width: 450px;
+    transition: .5s all;
+    background-position: bottom;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    transform: scale(0.7, 0.7);
-    transition: 1s all;
-    filter: blur(4px); }
+    filter: blur(2px);
+    border-radius: 25px; }
     .grid-container-pulseras div p {
-      font-family: 'Oswald', sans-serif;
+      font-family: "Montserrat", sans-serif;
       display: none;
-      font-size: 3em;
+      font-size: 2.7em;
       position: absolute;
       bottom: 0;
-      margin: 10px;
+      margin: 15px;
       transition: .5s all; }
   .grid-container-pulseras__img1 {
-    background-image: url("../imagenes/pulsera1.jpeg"); }
+    background-image: url("../imagenes/pulsera1.jpg"); }
   .grid-container-pulseras__img2 {
-    background-image: url("../imagenes/pulsera2.jpeg"); }
+    background-image: url("../imagenes/pulsera2.jpg"); }
   .grid-container-pulseras__img3 {
-    background-image: url("../imagenes/pulsera3.jpeg"); }
+    background-image: url("../imagenes/pulsera3.jpg"); }
   .grid-container-pulseras__img4 {
-    background-image: url("../imagenes/pulsera4.jpeg"); }
+    background-image: url("../imagenes/pulsera4.jpg"); }
   .grid-container-pulseras__img5 {
-    background-image: url("../imagenes/pulsera5.jpeg"); }
+    background-image: url("../imagenes/pulsera5.jpg"); }
   .grid-container-pulseras__img6 {
-    background-image: url("../imagenes/pulsera6.jpeg"); }
+    background-image: url("../imagenes/pulsera6.jpg"); }
 
 /* TRANSICIONES */
 .grid-container-pulseras div:hover {
-  transform: scale(1, 1);
-  filter: none;
-  margin: 10px;
-  box-shadow: 0px 0px 20px black; }
+  transform: scale(1.08, 1.08);
+  margin: 20px;
+  filter: none; }
   .grid-container-pulseras div:hover p {
     display: block; }

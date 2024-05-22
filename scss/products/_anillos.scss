@@ -2,41 +2,45 @@
 /* PAGE ANILLOS SYTLE */
 
 .grid-container-anillos {
+    margin-top: 10px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 500px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px 500px;
+    justify-items: center;
     &__img1 {
-        background-image: url("../imagenes/anillo1.jpeg");
+        background-image: url("../imagenes/anillo2.jpg");
     }
     &__img2 {
-        background-image: url("../imagenes/anillo2.jpeg");
+        background-image: url("../imagenes/anillo3.jpg");
     }
     &__img3 {
-        background-image: url("../imagenes/anillo3.jpeg");
+        background-image: url("../imagenes/anillo4.jpg");
     }
     &__img4 {
-        background-image: url("../imagenes/anillo4.jpeg");
+        background-image: url("../imagenes/anillo5.jpg");
     }
     &__img5 {
-        background-image: url("../imagenes/anillo5.jpeg");
+        background-image: url("../imagenes/anillo6.jpg");
     }
     &__img6 {
-        background-image: url("../imagenes/anillo6.jpeg");
+        background-image: url("../imagenes/anillo7.jpg");
     }
     div {
-        transform: scale(.7, .7);
-        transition: 1s all;
-        background-position: center;
+        height: 420px;
+        width: 450px;
+        transition: .5s all;
+        background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
-        filter: blur(4px);
+        filter: blur(2px);
+        border-radius: 25px;
         p {
-            font-family: 'Oswald', sans-serif;
+            font-family: $montserrat;
             display: none;
-            font-size: $text-medium;
+            font-size: 2.7em;
             position: absolute;
             bottom: 0;
-            margin: 10px;
+            margin: 15px;
             transition: .5s all;
         }
     }
@@ -46,10 +50,9 @@
 
 .grid-container-anillos {
     div:hover {
-        transform: scale(1, 1);
+        transform: scale(1.1, 1.1);
         margin: 20px;
         filter: none;
-        box-shadow: 0px 0px 20px black;
         p {
             display: block;
         }

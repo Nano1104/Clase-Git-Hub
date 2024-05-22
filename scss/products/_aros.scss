@@ -2,46 +2,51 @@
 /* PAGE AROS STYLE */
 
 .grid-container-aros {
+    margin-top: 10px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 500px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px 500px;
+    justify-items: center;
     &__img1 {
-        background-image: url("../imagenes/aro1.jpeg");
+        background-image: url("../imagenes/aro2.jpg");
         background-position: bottom;
     }
     &__img2 {
-        background-image: url("../imagenes/aro2.jpeg");
+        background-image: url("../imagenes/aro3.jpg");
         background-position: bottom;
     }
     &__img3 {
-        background-image: url("../imagenes/aro3.jpeg");
+        background-image: url("../imagenes/aro4.jpg");
         background-position: bottom;
     }
     &__img4 {
-        background-image: url("../imagenes/aro4.jpeg");
+        background-image: url("../imagenes/aro5.jpg");
         background-position: center;
     }
     &__img5 {
-        background-image: url("../imagenes/aro5.jpeg");
+        background-image: url("../imagenes/aro6.jpg");
         background-position: bottom;
     }
     &__img6 {
-        background-image: url("../imagenes/aro6.jpeg");
+        background-image: url("../imagenes/aro7.jpg");
         background-position: bottom;
     }
     div {
-        transform: scale(.7, .7);
-        transition: 1s all;
+        height: 420px;
+        width: 450px;
+        transition: .5s all;
+        background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
-        filter: blur(4px);
+        filter: blur(2px);
+        border-radius: 25px;
         p {
-            font-family: 'Oswald', sans-serif;
+            font-family: $montserrat;
             display: none;
-            font-size: $text-medium;
+            font-size: 2.7em;
             position: absolute;
             bottom: 0;
-            margin: 10px;
+            margin: 15px;
             transition: .5s all;
         }
     }
@@ -51,10 +56,9 @@
 
 .grid-container-aros {
     div:hover {
-        transform: scale(1, 1);
-        margin: 20px;
+        transform: scale(1.08, 1.08);
+        margin: 10px;
         filter: none;
-        box-shadow: 0px 0px 20px black;
         p {
             display: block;
         }
