@@ -13,72 +13,50 @@
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <header id="contact-header">
-        <div class="container-nav-contact">
-            <nav class="container-nav-contact__nav animate__animated animate__fadeInDownBig">
-                <ul class="container-nav-contact__nav__ul">
-                    <li class="container-nav-contact__nav__ul__li">
-                        <a href="../index.html" class="container-nav-contact__nav__ul__li__a">Inicio</a>
-                    </li> 
-                    <li class="container-nav-contact__nav__ul__li">
-                        <a href="nosotros.html" class="container-nav-contact__nav__ul__li__a">Nosotros</a>
-                    </li>
-                    <li class="container-nav-contact__nav__ul__li">
-                        <a href="productos.html" class="container-nav-contact__nav__ul__li__a">Productos</a>
-                    </li>
-                    <li class="container-nav-contact__nav__ul__li">
-                        <a href="novedades.html" class="container-nav-contact__nav__ul__li__a">Novedades</a>
-                    </li>
-                    <li class="container-nav-contact__nav__ul__li">
-                        <a href="contacto.html" class="container-nav-contact__nav__ul__li__a">Contactanos</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="logo animate__animated animate__backInRight">
-            </div>
-        </div>
-    </header>
+    <div class="bar">
+        <div class="bar-icon"></div>
+    </div>
 
     <main>
         <div id="main-contact">
-            <section class="contact-section animate__animated animate__backInRight">
-                <h1 class="contact-section__title">
-                    Contactanos
-                </h1>
-                
-                 <form action="" method="POST" enctype="application/x-www-form-urlencoded" class="contact-section__form">
-                    <div class="contact-section__form__datos">
-                        <div class="contact-section__form__datos__names">
-                            <input type="text" name="nombre y apellido" placeholder="Nombre y Apellido" required>
-                            <input type="mail" name="mail" placeholder="E-mail" required>
-                        </div>
-
-                        <div class="contact-section__form__datos__select">
-                            <input type="text" name="telefono" placeholder="Teléfono" required>
-                            <div class="contact-section__form__datos__select__right">
-                                <label for="consulta">Cual es tu Consulta</label>
-                                <select name="consulta" required>
-                                    <option value="Promociones">Sobre promociones</option>
-                                    <option value="Las formas de envío">Las formas de envío</option>
-                                    <option value="Los métodos de pago">Los métodos de pago</option>
-                                    <option value="otra consulta">otros</option>
-                                </select>
-                            </div>
-                        </div>
+            <form action="" method="POST" enctype="application/x-www-form-urlencoded" class="form">
+                <h3 class="form__title">Contactanos: </h3>
+                <div class="form__datos">
+                    <div class="form__datos__names">
+                        <input type="text" name="nombre y apellido" placeholder="Nombre y Apellido" required>
+                        <input type="mail" name="mail" placeholder="E-mail" required>
                     </div>
 
-                    <div class="contact-section__form__consultation">
-                        <textarea name="textarea" cols="30" rows="10" placeholder="Explaya tu consulta aquí"></textarea>
-                        <div class="contact-section__form__consultation__buttons">
-                            <input type="submit" value="Enviar" class="contact-section__form__consultation__buttons__send">
-                            <input type="reset" value="Borrar" class="contact-section__form__consultation__buttons__delete">
+                    <div class="form__datos__select">
+                        <input type="text" name="telefono" placeholder="Teléfono" required>
+                        <div class="form__datos__select-right">
+                            <label for="consulta">Cual es tu Consulta</label>
+                            <select name="consulta" required>
+                                <option value=""></option>
+                                <option value="Promociones">Sobre promociones</option>
+                                <option value="Las formas de envío">Las formas de envío</option>
+                                <option value="Los métodos de pago">Los métodos de pago</option>
+                                <option value="otra consulta">otros</option>
+                            </select>
                         </div>
                     </div>
+                </div>
 
-                 </form> 
-             </section>
+                <div class="form__consult">
+                    <textarea name="textarea" cols="30" rows="10" placeholder="Explaya tu consulta aquí"></textarea>
+                    <div class="form__consult__btns">
+                        <input type="submit" value="Enviar" class="form__consult__btns-send">
+                        <input type="reset" value="Borrar" class="form__consult__btns-delete">
+                    </div>
+                </div>
+
+             </form> 
         </div>
     </main>
+
+    <div id="bar-footer">
+        <a href="../index.html" class="btn-back">INICIO</a>
+    </div>
 
 </body>
 </html>

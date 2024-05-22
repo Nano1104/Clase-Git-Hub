@@ -38,54 +38,58 @@
     text-align: center;
 }
 
+#bar-3 {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 120vh;
+    margin-left: 0%;
+}
+
 .grid-container-nosotros {
     display: grid;
-    margin-top: 380px;
-    grid-template-columns: repeat(10, 1fr);
+    margin-top: 250px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(5, 150px);
+    justify-items: center;
     div {
         border: none;
         cursor: pointer;
-        border-radius: 8px;
+        border-radius: 30px;
+        width: 500px;
+        height: 500px;
+    }
+    div:hover {
+        box-shadow: 0px 0px 5px black;
+        border: none;
     }
     &__img1 {
         border: 1px solid #333;
         background-image: url(../imagenes/anillo3.jpg);
         background-size: cover;
         background-position: center;
-        grid-column: 1/4;
-        grid-row: 1/4;
         transition: .2s all;
-    }
-    &__img1:hover {
-        box-shadow: 0px 0px 10px black;
-        border: none;
+
+        animation: bounceInUp;
+        animation-duration: 2s;
     }
     &__img2 {
         border: 1px solid #333;
         background-image: url(../imagenes/collar3.jpeg);
         background-size: cover;
         background-position: bottom;
-        grid-column: 4/8;
-        grid-row: 2/5;
         transition: .2s all;
-    }
-    &__img2:hover {
-        box-shadow: 0px 0px 10px black;
-        border: none;
+        margin-top: 200px;
     }
     &__img3 {
         border: 1px solid #333;
         background-image: url(../imagenes/pulsera1.jpg);
         background-size: cover;
         background-position: bottom;
-        grid-column: 8/11;
-        grid-row: 1/4;
         transition: .2s all;
-    }
-    &__img3:hover {
-        box-shadow: 0px 0px 10px black;
-        border: none;
+
+        animation: bounceInUp;
+        animation-duration: 2s;
     }
 }
 

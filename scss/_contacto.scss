@@ -1,144 +1,95 @@
 
 
-/* STYLE - CONTACT PAGE - */
-
-/* STYLE - NAV - */
-
-#contact-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .container-nav-contact {
-        display: flex;
-        justify-content: space-between;
-        height: 50px;
-        width: 100%;
-        &__nav {
-            display: flex;
-            align-items: center;
-            padding: $spacing-big + $spacing-big;
-            &__ul {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                height: 48px;
-                &__li {
-                    margin: 0px 20px;
-                    &__a {
-                        color: $yellow;
-                        font-size: $text-normal+.6em;
-                        transition: .3s all;
-                        font-family: monospace;
-                        font-weight: 500;
-                    }
-                    &__a:hover {
-                        font-size: $text-normal+1em;
-                        color: #C07F00;
-                        font-weight: bold;
-                        text-shadow: 0px 0px 10px black;
-                    }
-                }
-            }
-        }
-    }
-
-    .logo {
-        border-radius: 50%;
-        height: 65px;
-        width: 65px;
-    }
-}
-
-
 /* STYLES - FORM - */
 
 #main-contact {
     display: flex;
     justify-content: center;
-    margin: 200px auto;
-    .contact-section {
-        background-color: khaki;
-        width: 50vw;
+    margin: 100px auto;
+    div div {
+        margin: 0px;
+    }
+    .form {
+        background-color: $gray;
+        width: 40vw;
+        height: 700px;
         padding: 20px;
-        box-shadow: 0px 0px 10px black;
+        box-shadow: 0px 0px 5px black;
+        font-family: $montserrat;
+        font-size: 1em;
         &__title {
-            font-family: 'Anton', sans-serif;
-            font-size: $text-medium;
+            font-size: 3em;
+            font-family: $playfair-display;
+            color: black;
         }
-        &__form {
-            &__datos {
+        &__datos {
+            display: flex;
+            justify-content: start; 
+            input {
+                font-size: $text-normal;
+                background: none;
+                border: 1px solid black;
+                padding: 5px;
+                width: 80%;
+            }
+            &__names {
                 display: flex;
-                justify-content: space-around; 
-                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 45%;
+                
+            }
+            &__select {
+                display: flex;
+                flex-direction: column;
+                width: 45%;
                 input {
-                    font-size: $text-normal;
-                    background: none;
-                    border: none;
-                    border-bottom: 1px solid black;
-                    padding: 5px;
                 }
-                &__names {
-                    display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                }
-                &__select {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    width: 100%;
-                    &__right {
-                        label {
-                            font-family: 'Quicksand', sans-serif;
-                            font-size: $text-normal;    
-                        }
-                        select {
-                            border: $border;
-                            padding: 3px;
-                            border-radius: 10px;
-                            margin-left: 5px;
-                        }
+                &-right {
+                    label {
+                        font-size: 1.2em;
+                    }
+                    select {
+                        border: $border;
+                        border-radius: 10px;
                     }
                 }
             }
+        }
 
-
-
-            &__consultation {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                textarea {
-                    width: 50%;
-                    resize: none;
-                    font-family: 'Quicksand', sans-serif;
-                    font-size: $text-normal;   
-                    text-align: center;
+        &__consult {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            textarea {
+                width: 75px;
+                height: 75px;
+                resize: none;
+                font-size: $text-normal;   
+            }
+            &__btns {
+                width: 90%;
+                input {
+                    border-radius: 15px;
+                    cursor: pointer;
+                    border: none;
+                    box-shadow: 0px 0px 3px black;
+                    margin: 3px;
                 }
-                &__buttons {
-                    text-align: center;
-                    width: 90%;
-                    input {
-                        border-radius: 15px;
-                        cursor: pointer;
-                        border: none;
-                        box-shadow: 0px 0px 3px black;
-                        margin: 3px;
-                    }
-                    &__send {
-                        width: 70%;
-                        padding: 12px;
-                        background-image: radial-gradient(circle 350px, lightgray, rgb(58, 54, 54));
-                    }
-                    &__delete {
-                       padding: 12px 5px;
-                       background-image: radial-gradient(circle 25px, lightcoral, crimson);
-                    }
+                &-send {
+                    width: 70%;
+                    padding: 12px;
+                    background-image: radial-gradient(circle 350px, lightgray, rgb(58, 54, 54));
+                }
+                &-delete {
+                   padding: 12px 5px;
+                   background-image: radial-gradient(circle 25px, lightcoral, crimson);
                 }
             }
         }
     }
 }
+
 
 /* ANIMACIONES */
 
@@ -155,8 +106,6 @@
 
     #main-contact {
         .contact-section {
-            &__title {
-            }
             &__form {
                 &__names {
                     display: flex;

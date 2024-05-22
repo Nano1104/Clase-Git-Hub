@@ -401,48 +401,51 @@ html {
   margin: 50px 20px;
   text-align: center; }
 
+#bar-3 {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 120vh;
+  margin-left: 0%; }
+
 .grid-container-nosotros {
   display: grid;
-  margin-top: 380px;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(5, 150px); }
+  margin-top: 250px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 150px);
+  justify-items: center; }
   .grid-container-nosotros div {
     border: none;
     cursor: pointer;
-    border-radius: 8px; }
+    border-radius: 30px;
+    width: 500px;
+    height: 500px; }
+  .grid-container-nosotros div:hover {
+    box-shadow: 0px 0px 5px black;
+    border: none; }
   .grid-container-nosotros__img1 {
     border: 1px solid #333;
     background-image: url(../imagenes/anillo3.jpg);
     background-size: cover;
     background-position: center;
-    grid-column: 1/4;
-    grid-row: 1/4;
-    transition: .2s all; }
-  .grid-container-nosotros__img1:hover {
-    box-shadow: 0px 0px 10px black;
-    border: none; }
+    transition: .2s all;
+    animation: bounceInUp;
+    animation-duration: 2s; }
   .grid-container-nosotros__img2 {
     border: 1px solid #333;
     background-image: url(../imagenes/collar3.jpeg);
     background-size: cover;
     background-position: bottom;
-    grid-column: 4/8;
-    grid-row: 2/5;
-    transition: .2s all; }
-  .grid-container-nosotros__img2:hover {
-    box-shadow: 0px 0px 10px black;
-    border: none; }
+    transition: .2s all;
+    margin-top: 200px; }
   .grid-container-nosotros__img3 {
     border: 1px solid #333;
     background-image: url(../imagenes/pulsera1.jpg);
     background-size: cover;
     background-position: bottom;
-    grid-column: 8/11;
-    grid-row: 1/4;
-    transition: .2s all; }
-  .grid-container-nosotros__img3:hover {
-    box-shadow: 0px 0px 10px black;
-    border: none; }
+    transition: .2s all;
+    animation: bounceInUp;
+    animation-duration: 2s; }
 
 main div div {
   display: inline-block;
@@ -668,8 +671,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 10px black;
-    border-radius: 10px; }
+    box-shadow: 0px 0px 2px black;
+    border-radius: 30px;
+    border: none; }
+  .grid-container-products div:hover {
+    box-shadow: none; }
   .grid-container-products .grid-container-products__img1 {
     background-image: url(../imagenes/collar2.jpg);
     background-position: bottom;
@@ -995,108 +1001,70 @@ hr {
   #news-header .news-nav__nav__ul__li__a:hover {
     font-size: 1.3em; } }
 
-/* STYLE - CONTACT PAGE - */
-/* STYLE - NAV - */
-#contact-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-  #contact-header .container-nav-contact {
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    width: 100%; }
-    #contact-header .container-nav-contact__nav {
-      display: flex;
-      align-items: center;
-      padding: 40px; }
-      #contact-header .container-nav-contact__nav__ul {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        height: 48px; }
-        #contact-header .container-nav-contact__nav__ul__li {
-          margin: 0px 20px; }
-          #contact-header .container-nav-contact__nav__ul__li__a {
-            color: #FFD95A;
-            font-size: 2.1em;
-            transition: .3s all;
-            font-family: monospace;
-            font-weight: 500; }
-          #contact-header .container-nav-contact__nav__ul__li__a:hover {
-            font-size: 2.5em;
-            color: #C07F00;
-            font-weight: bold;
-            text-shadow: 0px 0px 10px black; }
-  #contact-header .logo {
-    border-radius: 50%;
-    height: 65px;
-    width: 65px; }
-
 /* STYLES - FORM - */
 #main-contact {
   display: flex;
   justify-content: center;
-  margin: 200px auto; }
-  #main-contact .contact-section {
-    background-color: khaki;
-    width: 50vw;
+  margin: 100px auto; }
+  #main-contact div div {
+    margin: 0px; }
+  #main-contact .form {
+    background-color: #EEEEEE;
+    width: 40vw;
+    height: 700px;
     padding: 20px;
-    box-shadow: 0px 0px 10px black; }
-    #main-contact .contact-section__title {
-      font-family: 'Anton', sans-serif;
-      font-size: 3em; }
-    #main-contact .contact-section__form__datos {
+    box-shadow: 0px 0px 5px black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em; }
+    #main-contact .form__title {
+      font-size: 3em;
+      font-family: "Playfair Display", serif;
+      color: black; }
+    #main-contact .form__datos {
       display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap; }
-      #main-contact .contact-section__form__datos input {
+      justify-content: start; }
+      #main-contact .form__datos input {
         font-size: 1.5em;
         background: none;
-        border: none;
-        border-bottom: 1px solid black;
-        padding: 5px; }
-      #main-contact .contact-section__form__datos__names {
+        border: 1px solid black;
+        padding: 5px;
+        width: 80%; }
+      #main-contact .form__datos__names {
         display: flex;
-        justify-content: space-between;
-        width: 100%; }
-      #main-contact .contact-section__form__datos__select {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 45%; }
+      #main-contact .form__datos__select {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%; }
-        #main-contact .contact-section__form__datos__select__right label {
-          font-family: 'Quicksand', sans-serif;
-          font-size: 1.5em; }
-        #main-contact .contact-section__form__datos__select__right select {
+        flex-direction: column;
+        width: 45%; }
+        #main-contact .form__datos__select-right label {
+          font-size: 1.2em; }
+        #main-contact .form__datos__select-right select {
           border: 1px solid black;
-          padding: 3px;
-          border-radius: 10px;
-          margin-left: 5px; }
-    #main-contact .contact-section__form__consultation {
+          border-radius: 10px; }
+    #main-contact .form__consult {
       display: flex;
       flex-direction: column;
-      align-items: center; }
-      #main-contact .contact-section__form__consultation textarea {
-        width: 50%;
+      align-items: start; }
+      #main-contact .form__consult textarea {
+        width: 75px;
+        height: 75px;
         resize: none;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 1.5em;
-        text-align: center; }
-      #main-contact .contact-section__form__consultation__buttons {
-        text-align: center;
+        font-size: 1.5em; }
+      #main-contact .form__consult__btns {
         width: 90%; }
-        #main-contact .contact-section__form__consultation__buttons input {
+        #main-contact .form__consult__btns input {
           border-radius: 15px;
           cursor: pointer;
           border: none;
           box-shadow: 0px 0px 3px black;
           margin: 3px; }
-        #main-contact .contact-section__form__consultation__buttons__send {
+        #main-contact .form__consult__btns-send {
           width: 70%;
           padding: 12px;
           background-image: radial-gradient(circle 350px, lightgray, #3a3636); }
-        #main-contact .contact-section__form__consultation__buttons__delete {
+        #main-contact .form__consult__btns-delete {
           padding: 12px 5px;
           background-image: radial-gradient(circle 25px, lightcoral, crimson); }
 
