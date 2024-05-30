@@ -3,4 +3,4 @@
 
 *Desarrollado con: HTML, CSS, SCSS, BOOTSTRAP y ANIMATE*
 
-- [Sitio](https://nano1104.github.io/webdevelopment-final-project/)
+- [Sitio](https://nano1104.github.io/artemis-web/)
